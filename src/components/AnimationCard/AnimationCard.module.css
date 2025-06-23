@@ -5,6 +5,9 @@
   border-radius: 8px;
   margin: 1rem 0;
   transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card:hover {
@@ -18,4 +21,17 @@
 .card p {
   font-size: 0.9rem;
   color: #444;
+}
+
+.image   {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  
 }
