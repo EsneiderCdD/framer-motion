@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Básicos",
+    "route": "/catalog/basicos",
+    "animation": "basicos"
+  },
+  {
+    "title": "Gestures",
+    "route": "/catalog/gestures",
+    "animation": "gestures"
+  },
+  {
+    "title": "Layout",
+    "route": "/catalog/layout",
+    "animation": "layout"
+  }
+]

@@ -1,0 +1,35 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.logo {
+    border: 50%;
+    margin-bottom: 20px;    
+    display: flex;
+    border-radius: 40%;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px; /* Nuevo */
+   
+}
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+}
+
+.menu li {
+  text-decoration: none;
+}
