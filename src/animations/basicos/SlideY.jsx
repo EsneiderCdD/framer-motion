@@ -1,6 +1,7 @@
 // src/animations/basicos/SlideY.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
+import AnimationCatalog from '../../components/Animations';
 
 function SlideY() {
   const codeString = `<motion.div
@@ -33,7 +34,7 @@ function SlideY() {
 
       {/* Enlace para descargar el documento */}
       <a
-        href="/documents/01.docx"
+        href="/documents/02.docx"
         download
         style={{ display: 'inline-block', marginTop: '1rem', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
       >
@@ -53,6 +54,9 @@ function SlideY() {
           allowFullScreen
         ></iframe>
       </div>
+      
+      {/* Animation Catalog */}
+      <AnimationCatalog />
 
     </AnimationBox>
   );
