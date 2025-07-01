@@ -3,6 +3,7 @@ import SlideX from './SlideX';
 import SlideXY from './SlideXY';
 import Circle from './Circle';
 import CirclePerfect from './CirclePerfect';
+import Mov from './Mov';
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
 const circleMotion = generateCircleKeyframes(40, 100);
@@ -106,6 +107,7 @@ export const catalogContent = [
     id: 'comparacion-slide-x-y',
     titulo: 'Duración',
     descripcion: 'Duracion de la alta y baja en una animación',
+    componente: Mov,
     animation1: {
       initial: { y: -100 },
       animate: { y: 100 },
