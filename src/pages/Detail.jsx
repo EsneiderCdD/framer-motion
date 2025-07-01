@@ -15,14 +15,14 @@ function Detail() {
     return <p>⚠️ Animación no encontrada para el tema "{tema}" y el ID "{id}"</p>;
   }
 
-  const { titulo, descripcion, componente: ComponenteAnimado } = animacion;
+  const { componente: ComponenteAnimado } = animacion;
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h2>{titulo}</h2>
-      <p>{descripcion}</p>
+      
       <div style={{ marginTop: '2rem' }}>
         <ComponenteAnimado />
+        
       </div>
     </div>
   );

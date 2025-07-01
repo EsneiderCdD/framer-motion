@@ -13,23 +13,32 @@ function SlideX() {
 
   return (
     <AnimationBox
-      initial={{ x: -100 }}
+      initial={{ x: -250 }}
       animate={{ x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 10 ,
+        repeat: Infinity
+        
+
+      }}
+
     >
-      <p>
-        Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
-        Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
-      </p>
-
-      <p>
-        Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
-        y la <strong>transition</strong> define que este cambio tarda 1 segundo.
-      </p>
-
-      <pre className={styles.codeBlock}>
-        <code>{codeString}</code>
-      </pre>
+      <h2>Movimiento en el eje X</h2> 
+      <h3>Initial, Animate y Transition </h3>
+      <div className={styles.content}>
+        <div className={styles.txt}>
+          <p>
+            Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
+            Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
+          </p>
+          <p>
+            Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
+            y la <strong>transition</strong> define que este cambio tarda 1 segundo.
+          </p>
+        </div>
+        <pre className={styles.codeBlock}>
+          <code>{codeString}</code>
+        </pre>
+      </div>
 
       {/* Enlace para descargar el documento */}
       <a
