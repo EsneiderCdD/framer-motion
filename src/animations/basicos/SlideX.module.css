@@ -1,0 +1,10 @@
+.codeBlock {
+  background-color: #F6EA11;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+

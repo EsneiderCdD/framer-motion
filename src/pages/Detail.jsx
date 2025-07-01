@@ -1,6 +1,6 @@
 // src/pages/Detail.jsx
 import { useParams } from 'react-router-dom';
-import { animations as basicos } from '../animations/basicos/meta';
+import { catalogContent as basicos } from '../animations/basicos/meta';
 
 function Detail() {
   const { tema, id } = useParams();
