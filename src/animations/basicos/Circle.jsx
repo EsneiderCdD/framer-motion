@@ -1,7 +1,7 @@
 // src/animations/basicos/Circle.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
-
+import KeyframesCatalog from '../../components/Keyframes';
 function Circle() {
   const codeString = `<motion.div
   initial={{ x: 0, y: 0 }}
@@ -58,6 +58,8 @@ function Circle() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
+
+        <KeyframesCatalog />
       </div>
 
     </AnimationBox>
