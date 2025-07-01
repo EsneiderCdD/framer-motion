@@ -1,5 +1,8 @@
-import FadeIn from './FadeIn';
+import SlideY from './SlideY';
 import SlideX from './SlideX';
+import SlideXY from './SlideXY';
+import Circle from './Circle';
+import CirclePerfect from './CirclePerfect';
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
 const circleMotion = generateCircleKeyframes(40, 100);
@@ -29,7 +32,7 @@ export const catalogContent = [
     id: 'slide-y',
     titulo: 'Movimiento eje Y',
     descripcion: 'Desplazamiento vertical animado en bucle.',
-    componente: FadeIn,
+    componente: SlideY,
     animation: {
       initial: { y: -100 },
       animate: { y: 100 },
@@ -45,6 +48,7 @@ export const catalogContent = [
     type: 'animation',
     id: 'slide-xy',
     titulo: 'X y Y',
+    componente: SlideXY,
     descripcion: 'Desplazamiento vertical y horizontal en diagonal.',
     animation: {
       initial: { x: -100, y: -100 },
@@ -63,6 +67,7 @@ export const catalogContent = [
     type: 'animation',
     id: 'circle',
     titulo: 'Vuelta',
+    componente: Circle,
     descripcion: 'El logo se mueve en una trayectoria circular infinita.',
     animation: {
       initial: { x: 0, y: 0 },
@@ -81,6 +86,7 @@ export const catalogContent = [
     type: 'animation',
     id: 'circle-perfect',
     titulo: 'Vuelta Perfecta',
+    componente: CirclePerfect,
     descripcion: 'El logo se mueve en una trayectoria circular infinita con keyframes más suaves.',
     animation: {
       initial: { x: circleMotion.x[0], y: circleMotion.y[0] },

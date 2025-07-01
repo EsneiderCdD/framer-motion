@@ -1,21 +1,27 @@
-// src/animations/basicos/SlideX.jsx
+// src/animations/basicos/Circle.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 
-function SlideX() {
+function Circle() {
   const codeString = `<motion.div
-  initial={{ x: -100 }}
-  animate={{ x: 0 }}
-  transition={{ duration: 1 }}
+  initial={{ x: 0, y: 0 }}
+  animate={{
+        x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
+        y: [-100, -70, 0, 70, 100, 70, 0, -70, -100]
+      }}
+  transition={{ duration: 10 }}
 >
   Slide X
 </motion.div>`;
 
   return (
     <AnimationBox
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1 }}
+        initial= {{ x: 0, y: 0 }}
+      animate= {{
+        x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
+        y: [-100, -70, 0, 70, 100, 70, 0, -70, -100]
+      }}
+      transition={{ duration: 10 }}
     >
       <p>
         Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
@@ -58,4 +64,4 @@ function SlideX() {
   );
 }
 
-export default SlideX;
+export default Circle;

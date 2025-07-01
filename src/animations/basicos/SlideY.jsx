@@ -1,11 +1,11 @@
-// src/animations/basicos/SlideX.jsx
+// src/animations/basicos/SlideY.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 
-function SlideX() {
+function SlideY() {
   const codeString = `<motion.div
-  initial={{ x: -100 }}
-  animate={{ x: 0 }}
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
   transition={{ duration: 1 }}
 >
   Slide X
@@ -13,8 +13,8 @@ function SlideX() {
 
   return (
     <AnimationBox
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
       transition={{ duration: 1 }}
     >
       <p>
@@ -58,4 +58,7 @@ function SlideX() {
   );
 }
 
-export default SlideX;
+export default SlideY;
+
+
+

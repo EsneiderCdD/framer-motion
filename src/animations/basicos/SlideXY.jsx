@@ -1,21 +1,22 @@
-// src/animations/basicos/SlideX.jsx
+// src/animations/basicos/SlideXY.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 
-function SlideX() {
+function SlideXY() {
   const codeString = `<motion.div
-  initial={{ x: -100 }}
-  animate={{ x: 0 }}
-  transition={{ duration: 1 }}
+  initial={{ y: -100, x: -100 }}
+  animate={{ y: 0, x: 0 }}
+  transition={{ duration: 10 }}
 >
   Slide X
 </motion.div>`;
 
   return (
     <AnimationBox
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1 }}
+      initial= {{ x: -100, y: -100 }}
+      animate= {{ x: 100, y: 100 }}
+      
+      transition={{ duration: 10 }}
     >
       <p>
         Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
@@ -58,4 +59,5 @@ function SlideX() {
   );
 }
 
-export default SlideX;
+export default SlideXY;
+

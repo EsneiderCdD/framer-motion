@@ -1,21 +1,28 @@
-// src/animations/basicos/SlideX.jsx
+// src/animations/basicos/CirclePerfect.jsx
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
+import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
-function SlideX() {
-  const codeString = `<motion.div
-  initial={{ x: -100 }}
-  animate={{ x: 0 }}
-  transition={{ duration: 1 }}
+const circleMotion = generateCircleKeyframes(40, 100);
+
+
+
+function CirclePerfect() {
+  const codeString = 
+`<motion.div
+    initial: { x: circleMotion.x[0], y: circleMotion.y[0] },
+    animate: { x: circleMotion.x, y: circleMotion.y },
+  
+    transition={{ duration: 10 }}
 >
   Slide X
 </motion.div>`;
 
   return (
     <AnimationBox
-      initial={{ x: -100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1 }}
+        initial= {{ x: circleMotion.x[0], y: circleMotion.y[0] }}
+      animate= {{ x: circleMotion.x, y: circleMotion.y }}
+      transition={{ duration: 10 }}
     >
       <p>
         Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
@@ -58,4 +65,4 @@ function SlideX() {
   );
 }
 
-export default SlideX;
+export default CirclePerfect;
