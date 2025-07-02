@@ -5,13 +5,24 @@ import m from '../../assets/images/m.png';
 
 export default function SizeExample() {
   return (
-    <motion.img
-      src={m}
-      alt="Tamaño"
-      className={styles.circle}
-      initial={{ width: '100px', height: '100px' }}
-      animate={{ width: '200px', height: '200px' }}
-      transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
-    />
+    <div className={styles.box}>
+      <div className={styles.item}>
+        <p>
+          ipsum dolor sit amet, consectetur adipiscing elit.
+          Nulla facilisi. Nulla facilisi. Tamaño
+          Suspendisse potenti. Sed euismod, nisi vel
+        </p>
+      </div>
+      <div  className={styles.item}>
+        <motion.img
+          src={m}
+          alt="Tamaño"
+          className={styles.circle}
+          initial={{ width: '100px', height: '100px' }}
+          animate={{ width: '150px', height: '150px' }}
+          transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
+        />
+      </div>
+    </div>
   );
 }
