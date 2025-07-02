@@ -11,6 +11,9 @@ export default function AnimationCatalog() {
     <div className={styles.container  }>
       
       <div>
+
+        <h4 style={{fontSize: '2.5rem'}}>Otras Propiedades</h4>
+
         <ScaleExample />
         <RotateExample />
         <OpacityExample />
