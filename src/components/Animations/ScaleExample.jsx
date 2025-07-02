@@ -6,16 +6,7 @@ import m from '../../assets/images/m.png';
 export default function ScaleExample() {
   return (
     <div className={styles.box}>
-      <div className={styles.item}>
-        <motion.img
-          src={m}
-          alt="Escala"
-          className={styles.circle}
-          initial={{ scale: 1.5 }}
-          animate={{ scale: 0 }}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
-      </div>
+     
       <div className={styles.item}>
         <code>
           &lt;motion.img<br />
@@ -27,6 +18,16 @@ export default function ScaleExample() {
           &nbsp;&nbsp;transition=&#123;&#123; duration: 2, repeat: Infinity &#125;&#125;<br />
           /&gt;
         </code>
+      </div>
+       <div className={styles.item}>
+        <motion.img
+          src={m}
+          alt="Escala"
+          className={styles.circle}
+          initial={{ scale: 1.5 }}
+          animate={{ scale: 0 }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
       </div>
       <div className={styles.item}>
         <p>

@@ -34,11 +34,11 @@ export default function OpacityExample() {
       </div>
 
       <div className={styles.item}>
-        <p>
-          La propiedad <strong>opacity</strong> en Framer Motion controla el nivel de transparencia de un elemento. Un valor de <strong>opacity: 0</strong> hace que el objeto sea completamente invisible, mientras que <strong>opacity: 1</strong> lo hace totalmente visible. <br /><br />
-          En este ejemplo, la animación hace que el elemento oscile entre una opacidad baja (<strong>0.2</strong>) y una opacidad total (<strong>1</strong>), creando un efecto de aparición y desaparición suave y continuo. <br /><br />
-          La propiedad <strong>opacity</strong> es muy útil para crear transiciones visuales, efectos de entrada o salida, o para resaltar elementos de manera dinámica.
-        </p>
+       <p>
+  La propiedad <strong>opacity</strong> en Framer Motion controla la transparencia de un elemento. Un valor de <strong>opacity: 0</strong> lo hace invisible y <strong>opacity: 1</strong> lo hace totalmente visible. <br /><br />
+  En este caso, la animación varía entre <strong>opacity: 0.2</strong> y <strong>opacity: 1</strong>, creando un efecto de aparición y desaparición continuo.
+</p>
+
       </div>
     </div>
   );

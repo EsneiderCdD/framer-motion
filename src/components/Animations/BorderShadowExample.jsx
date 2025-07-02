@@ -34,12 +34,11 @@ export default function ColorExample() {
       </div>
 
       <div className={styles.item}>
-        <p>
-          En este ejemplo de Framer Motion, no solo animamos el cambio de <strong>color</strong> del fondo, sino que también transformamos la <strong>forma</strong> del contenedor al modificar la propiedad <strong>borderRadius</strong>. <br /><br />
-          La animación inicia con un contenedor cuadrado de color amarillo (<strong>#F6EA11</strong>) y gradualmente cambia a un círculo de color negro (<strong>#000000</strong>). La propiedad <strong>borderRadius</strong> permite esta transición suave entre una figura cuadrada (0%) y una figura circular (50%). <br /><br />
-          Es importante aclarar que, al igual que las transiciones de color, los cambios en <strong>borderRadius</strong> son transformaciones visuales que no alteran el espacio ocupado por el elemento en el layout. Solo afectan la apariencia, sin desplazar ni afectar otros elementos alrededor. <br /><br />
-          Este tipo de animaciones son ideales para crear transiciones atractivas que combinan color y forma de manera dinámica y elegante.
-        </p>
+      <p>
+  En Framer Motion, podemos animar el <strong>backgroundColor</strong> y el <strong>borderRadius</strong> para cambiar el color y la forma de un elemento al mismo tiempo. <br /><br />
+  Por ejemplo, un contenedor cuadrado puede transformarse en un círculo mientras cambia de color. Estas animaciones solo afectan la apariencia visual, no el espacio que ocupa el elemento.
+</p>
+
       </div>
 
     </div>

@@ -34,12 +34,11 @@ export default function SizeExample() {
       </div>
 
       <div className={styles.item}>
-        <p>
-          En Framer Motion, además de modificar la escala visual de un objeto, también podemos cambiar directamente su tamaño utilizando las propiedades <strong>width</strong> (ancho) y <strong>height</strong> (alto). Ambas permiten ajustar las dimensiones físicas del elemento dentro del layout. <br /><br />
-          Es importante notar la diferencia con la propiedad <strong>scale</strong>: cuando usamos <strong>scale</strong>, el objeto se agranda o reduce visualmente, pero el espacio que ocupa en la página (su "caja" o área reservada) no cambia. Esto significa que un elemento puede crecer visualmente sin desplazar a los elementos vecinos. <br /><br />
-          En cambio, al animar el <strong>width</strong> y el <strong>height</strong>, el tamaño real del objeto cambia y esto sí afecta la estructura del layout, puede mover o empujar otros elementos, y puede modificar el flujo de la página. <br /><br />
-          Por lo tanto, aunque <strong>scale</strong> y <strong>size</strong> (ancho y alto) parecen producir un efecto similar a simple vista, en realidad tienen un impacto muy diferente sobre la disposición de los elementos dentro del contenedor.
-        </p>
+     <p>
+  En Framer Motion, podemos cambiar el tamaño real de un elemento usando <strong>width</strong> y <strong>height</strong>, lo que afecta directamente el espacio que ocupa en la página. <br /><br />
+  A diferencia de <strong>scale</strong>, que solo modifica el tamaño visual sin alterar el layout, cambiar el ancho y alto sí puede mover o desplazar otros elementos.
+</p>
+
       </div>
 
     </div>

@@ -47,11 +47,11 @@ export default function RotateExample() {
         />
       </div>
       <div className={styles.item}>
-        <p>
-          La propiedad <strong>rotate</strong> en Framer Motion permite girar un elemento en su plano base, es decir, en el eje Z (el eje que "sale" de la pantalla). Por ejemplo, al animar de <strong>rotate: 0</strong> a <strong>rotate: 360</strong>, el objeto realiza una rotación completa sobre sí mismo. <br /><br />
-          Además, Framer Motion nos permite rotar sobre los ejes X y Y de forma independiente usando las propiedades <strong>rotateX</strong> y <strong>rotateY</strong>. Al usar <strong>rotateX</strong>, el elemento gira sobre el eje horizontal (como si se volcara hacia adelante o hacia atrás). Con <strong>rotateY</strong>, el giro es sobre el eje vertical (como si el objeto girara de lado a lado). <br /><br />
-          Estas propiedades nos permiten crear animaciones tridimensionales sencillas que agregan profundidad y dinamismo a nuestros proyectos.
-        </p>
+     <p>
+  La propiedad <strong>rotate</strong> en Framer Motion permite girar un elemento sobre su eje Z, es decir, rotar en su propio plano. Por ejemplo, animar de <strong>rotate: 0</strong> a <strong>rotate: 360</strong> genera una vuelta completa sobre sí mismo. <br /><br />
+  También es posible rotar sobre el eje X con <strong>rotateX</strong>, lo que provoca un giro hacia adelante o hacia atrás, afectando la altura visual del objeto. Por otro lado, <strong>rotateY</strong> realiza un giro de lado a lado, modificando la vista en el ancho. Estos movimientos permiten crear efectos tridimensionales simples que agregan profundidad a la animación.
+</p>
+
       </div>
     </div>
   );
