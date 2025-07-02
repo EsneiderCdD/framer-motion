@@ -1,9 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+QLD+Hand&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+h2 {
+  font-family: 'Edu QLD Hand', cursive;
+}
+h3 {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.11rem;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+
+}
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: #F6EA11;
+  line-height: 2rem;
+  
+}
+
+
+
 * {
     background-color: #F6EA11;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
     text-decoration: none;
 } 
