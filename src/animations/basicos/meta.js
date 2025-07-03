@@ -5,6 +5,7 @@ import Circle from './Circle';
 import CirclePerfect from './CirclePerfect';
 import Mov from './Duration';
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
+import RandomMotion from './RandomMotion';
 
 const circleMotion = generateCircleKeyframes(40, 100);
 
@@ -128,5 +129,19 @@ export const catalogContent = [
         ease: 'easeInOut'
       }
     }
-  }
+  },
+  {
+  type: 'animation',
+  id: 'random-motion',
+  titulo: 'Movimiento Errante',
+  descripcion: 'Movimiento aleatorio continuo con velocidad y rango personalizados.',
+  componente: RandomMotion,
+  random: true,
+  speed: 0.5,    // Medio segundo entre cada salto
+  rangeX: 50,   // Movimiento máximo en X de +/- 150px
+  rangeY: 50 ,   // Movimiento máximo en Y de +/- 150px
+}
+
+  
+
 ];

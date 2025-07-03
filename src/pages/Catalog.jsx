@@ -25,15 +25,20 @@ function Catalog() {
 
           return (
             <AnimationCard
-              key={item.id}
-              id={item.id}
-              titulo={item.titulo}
-              descripcion={item.descripcion}
-              tema={tema}
-              animation={item.animation}
-              animation1={item.animation1}
-              animation2={item.animation2}
-            />
+  key={item.id}
+  id={item.id}
+  titulo={item.titulo}
+  descripcion={item.descripcion}
+  tema={tema}
+  animation={item.animation}
+  animation1={item.animation1}
+  animation2={item.animation2}
+  random={item.random}
+  speed={item.speed}       // ✅ Agregar estas
+  rangeX={item.rangeX}     // ✅
+  rangeY={item.rangeY}     // ✅
+ />
+
           );
         })}
 

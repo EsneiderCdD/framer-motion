@@ -1,0 +1,9 @@
+/* src/components/RandomMotion/RandomMotion.module.css */
+
+.randomImage {
+  width: 100px;        /* Ajusta el tamaño según lo que necesites */
+  height: 100px;
+  object-fit: contain; /* Para que la imagen no se deforme */
+  cursor: pointer;     /* Opcional, si quieres dar la sensación de interactividad */
+  position: relative;  /* Para que pueda moverse dentro de su contenedor */
+}
