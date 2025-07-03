@@ -1,9 +1,11 @@
-// src/animations/basicos/Circle.jsx
+
+
+
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 import KeyframesCatalog from '../../components/Keyframes';
 function Circle() {
-  const codeString = `<motion.div
+   const codeString = `<motion.div
   initial={{ x: 0, y: 0 }}
   animate={{
         x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
@@ -16,35 +18,30 @@ function Circle() {
 
   return (
     <AnimationBox
-        initial= {{ x: 0, y: 0 }}
-      animate= {{
-        x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
-        y: [-100, -70, 0, 70, 100, 70, 0, -70, -100]
-      }}
-      transition={{ duration: 10 }}
+      initial= {{ x: -100, y: -100 }}
+      animate= {{ x: 100, y: 100 }}
+      
+      transition={{ duration: 7.5, repeat: Infinity }}
     >
-      <p>
-        Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
-        Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
-      </p>
+     <h2>Movimiento en el eje XY</h2> 
+                <h3>Initial, Animate y Transition </h3>
+                <div className={styles.content}>
+                  <div className={styles.txt}>
+                    <p>
+                      Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
+                      Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
+                    </p>
+                    <p>
+                      Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
+                      y la <strong>transition</strong> define que este cambio tarda 1 segundo.
+                    </p>
+                  </div>
+                  <pre className={styles.codeBlock}>
+                    <code>{codeString}</code>
+                  </pre>
+                </div>
 
-      <p>
-        Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
-        y la <strong>transition</strong> define que este cambio tarda 1 segundo.
-      </p>
 
-      <pre className={styles.codeBlock}>
-        <code>{codeString}</code>
-      </pre>
-
-      {/* Enlace para descargar el documento */}
-      <a
-        href="/documents/01.docx"
-        download
-        style={{ display: 'inline-block', marginTop: '1rem', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
-      >
-        Descargar documento
-      </a>
 
       {/* Video incrustado */}
       <div style={{ marginTop: '2rem' }}>
@@ -58,9 +55,18 @@ function Circle() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-
-        <KeyframesCatalog />
       </div>
+
+            {/* Enlace para descargar el documento */}
+      <a
+        href="/documents/01.docx"
+        download
+        style={{ display: 'inline-block', marginTop: '1rem', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
+      >
+        Descargar documento
+      </a>
+
+      <KeyframesCatalog />
 
     </AnimationBox>
   );

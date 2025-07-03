@@ -1,5 +1,40 @@
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+  flex: 1;
+  max-width: 600px;
+  gap: 4rem;
+}
+.item pre code {
+  display: flex;
+ text-align: left;
+}
+.item code { 
+  text-align: left;
+}
+
 .circle {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
   border-radius: 50%;
+
+
+}
+
+.circleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+ 
 }

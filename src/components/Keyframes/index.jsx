@@ -6,11 +6,13 @@ import OpacityKeyframes from './OpacityKeyframes';
 import CombinedKeyframes from './CombinedKeyframes';
 import TimesKeyframes from './TimesKeyframes';
 import EaseKeyframes from './EaseKeyframes';
-
+import styles from './Keyframes.module.css';
 export default function KeyframesCatalog() {
   return (
-    <div className="grid grid-cols-2 gap-4 p-4">
-      <BasicMovement />
+    <div className={styles.container}>
+      <h4 style={{fontSize: '2.5rem'}}>Otras Propiedades</h4>
+
+      {/* <BasicMovement /> */}
       <ScaleKeyframes />
       <RotateKeyframes />
       <OpacityKeyframes />
