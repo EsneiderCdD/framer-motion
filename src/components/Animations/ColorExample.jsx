@@ -24,7 +24,6 @@ export default function ColorExample() {
           </code>
         </pre>
       </div>
-
       <div className={styles.item}>
         <motion.div
           className={styles.circleWrapper}
@@ -35,15 +34,12 @@ export default function ColorExample() {
           <img src={m} alt="Colores" className={styles.circle} />
         </motion.div>
       </div>
-
       <div className={styles.item}>
         <p>
-  En Framer Motion, podemos animar el <strong>backgroundColor</strong> para crear transiciones suaves entre colores. <br /><br />
-  A diferencia de <strong>scale</strong> o <strong>size</strong>, las animaciones de color solo cambian la apariencia visual del elemento, sin afectar su tamaño ni su posición.
-</p>
-
+          En Framer Motion, podemos animar el <strong>backgroundColor</strong> para crear transiciones suaves entre colores. <br /><br />
+          A diferencia de <strong>scale</strong> o <strong>size</strong>, las animaciones de color solo cambian la apariencia visual del elemento, sin afectar su tamaño ni su posición.
+        </p>
       </div>
-
     </div>
   );
 }

@@ -8,6 +8,9 @@ import styles from './Transitions.module.css';
 export default function TransitionsCatalog() {
   return (
     <div className={styles.container}>
+
+      <h4 style={{fontSize: '2.5rem'}}>Otras Propiedades</h4>
+
       <RepeatExample />
       <RepeatTypeExample />
       <DelayExample />
