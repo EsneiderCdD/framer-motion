@@ -15,7 +15,10 @@ export default function RotateExample() {
   className={styles.circle}
   initial={{ rotate: 0 }}
   animate={{ rotate: 360 }}
-  transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
+  transition={{ duration: 5, 
+              repeat: Infinity, 
+              repeatType: 'reverse'
+              }}
 />`}
           </code>
         </pre>

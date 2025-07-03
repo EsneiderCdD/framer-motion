@@ -1,6 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+QLD+Hand&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+
+* {
+    background-color: #F6EA11;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px dotted red;
+    text-decoration: none;
+} 
+
 h2 {
   font-family: 'Edu QLD Hand', cursive;
 }
@@ -32,13 +43,3 @@ code {
 }
 
 
-
-* {
-    background-color: #F6EA11;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    border: 1px dotted red;
-    text-decoration: none;
-} 

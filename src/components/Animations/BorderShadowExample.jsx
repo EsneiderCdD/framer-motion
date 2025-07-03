@@ -12,11 +12,16 @@ export default function ColorExample() {
           <code>
             {`<motion.div
   className={styles.circleWrapper}
-  initial={{ backgroundColor: '#F6EA11', borderRadius: '0%' }}
-  animate={{ backgroundColor: '#000000', borderRadius: '50%' }}
-  transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
+  initial={{ backgroundColor: '#F6EA11', 
+  borderRadius: '0%' }}
+  animate={{ backgroundColor: '#000000', 
+  borderRadius: '50%' }}
+  transition={{ duration: 2, 
+  repeat: Infinity, 
+  repeatType: 'reverse' }}
 >
-  <img src={m} alt="Colores" className={styles.circle} />
+  <img src={m} alt="Colores" 
+  className={styles.circle} />
 </motion.div>`}
           </code>
         </pre>
