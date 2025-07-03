@@ -1,7 +1,7 @@
 
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
-// import TransitionsCatalog from '../../components/Transitions';
+import TransitionsCatalog from '../../components/Transitions';
 function SlideXY() {
   const codeString = `<motion.div
   initial={{ y: -100, x: -100 }}
@@ -61,7 +61,7 @@ function SlideXY() {
         Descargar documento
       </a>
 
-      {/* <TransitionsCatalog /> */}
+      <TransitionsCatalog />
 
     </AnimationBox>
   );

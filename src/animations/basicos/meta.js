@@ -3,7 +3,7 @@ import SlideX from './SlideX';
 import SlideXY from './SlideXY';
 import Circle from './Circle';
 import CirclePerfect from './CirclePerfect';
-import Mov from './Mov';
+import Mov from './Duration';
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
 const circleMotion = generateCircleKeyframes(40, 100);
