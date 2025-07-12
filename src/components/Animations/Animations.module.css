@@ -12,6 +12,7 @@
   flex: 1;
   max-width: 600px;
   gap: 4rem;
+  text-align: justify;  
 }
 .item pre code {
   display: flex;

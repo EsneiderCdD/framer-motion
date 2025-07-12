@@ -9,7 +9,7 @@ function SlideY() {
   animate={{ y: 0 }}
   transition={{ duration: 1 }}
 >
-  Slide X
+  Slide Y
 </motion.div>`;
 
   return (
@@ -25,13 +25,15 @@ function SlideY() {
             <div className={styles.content}>
               <div className={styles.txt}>
                 <p>
-                  Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
-                  Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
+                  Ya vimos cómo funciona el movimiento en el eje X. Para animar en el eje Y, seguimos exactamente el mismo principio, simplemente cambiando la propiedad de <code>x</code> a <code>y</code>.
                 </p>
                 <p>
-                  Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
-                  y la <strong>transition</strong> define que este cambio tarda 1 segundo.
+                  Continuamos utilizando <strong>initial</strong> para definir el punto de partida, <strong>animate</strong> para indicar el destino, y <strong>transition</strong> para controlar cómo ocurre el cambio.
                 </p>
+                <p>
+                  Ahora que entendemos la estructura básica, vamos a profundizar un poco más en otras propiedades que podemos animar.
+                </p>
+
               </div>
               <pre className={styles.codeBlock}>
                 <code>{codeString}</code>
