@@ -4,26 +4,30 @@ import styles from './Animations.module.css';
 import m from '../../assets/images/m.png';
 
 export default function SizeExample() {
-  return (
-    <div className={styles.box}>
-
-      <div className={styles.item}>
-        <pre>
-          <code>
-            {`<motion.img
+  const codeString = `<motion.img
   src={m}
   alt="Tamaño"
   className={styles.circle}
-  initial={{ width: '100px',
-    height: '100px' }}
-  animate={{ width: '150px',
-    height: '150px' }}
-  transition={{ duration: 10,
-    repeat: Infinity, 
-    repeatType: 'reverse' 
-    }}
-/>`}
-          </code>
+  initial={{
+    width: '100px',
+    height: '100px'
+  }}
+  animate={{
+    width: '150px',
+    height: '150px'
+  }}
+  transition={{
+    duration: 10,
+    repeat: Infinity,
+    repeatType: 'reverse'
+  }}
+/>`;
+
+  return (
+    <div className={styles.box}>
+      <div className={styles.item}>
+        <pre className={styles.codeBlock}>
+          <code>{codeString}</code>
         </pre>
       </div>
 
@@ -39,14 +43,13 @@ export default function SizeExample() {
       </div>
 
       <div className={styles.item}>
-     <p>
-  En Framer Motion, podemos cambiar el tamaño real de un elemento usando <strong>width</strong> y <strong>height</strong>, lo que afecta directamente el espacio que ocupa en la página. <br /><br />
-  A diferencia de <strong>scale</strong>, que solo modifica el tamaño visual sin alterar el layout, cambiar el ancho y alto sí puede mover o desplazar otros elementos.
-</p>
-
+        <p>
+          En Framer Motion, podemos modificar el tamaño real de un elemento usando las propiedades <strong>width</strong> y <strong>height</strong>. Esto cambia directamente el espacio que ocupa en el diseño de la página.
+          <br /> <br />
+          A diferencia de <strong>scale</strong>, que altera el tamaño visual sin afectar el layout, cambiar el ancho y alto sí puede influir en el flujo y disposición de otros elementos cercanos.
+        </p>
+        
       </div>
-
     </div>
   );
 }
-
