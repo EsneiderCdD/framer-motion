@@ -21,7 +21,7 @@ function SlideY() {
       
     >
       <h2>Movimiento en el eje Y</h2> 
-            <h3>Initial, Animate y Transition </h3>
+            <h3>Scale, Rotate, Opacity. Height, Width, backgroundColor y borderRadius </h3>
             <div className={styles.content}>
               <div className={styles.txt}>
                 <p>

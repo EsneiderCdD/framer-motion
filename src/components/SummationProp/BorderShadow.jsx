@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './Animations.module.css';
+import styles from './Summation.module.css';
 import m from '../../assets/images/m.png';
 
-export default function ColorExample() {
+export default function BorderExample() {
   const codeString = `<motion.div
   className={styles.circleWrapper}
   initial={{ 

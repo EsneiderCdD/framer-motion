@@ -4,7 +4,6 @@ import RotateExample from './RotateExample';
 import OpacityExample from './OpacityExample';
 import SizeExample from './SizeExample';
 import ColorExample from './ColorExample';
-import BorderShadowExample from './BorderShadowExample';
 import styles from './Animations.module.css';
 export default function AnimationCatalog() {
   return (
@@ -19,7 +18,7 @@ export default function AnimationCatalog() {
         <OpacityExample />
         <SizeExample />
         <ColorExample />
-        <BorderShadowExample />
+       
 
 
         
