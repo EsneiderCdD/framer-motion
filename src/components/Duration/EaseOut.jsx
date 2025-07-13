@@ -1,64 +1,55 @@
-
-
-    import { motion } from 'framer-motion';
+// src/components/Duration/EaseOut.jsx
+import { motion } from 'framer-motion';
 import styles from './Duration.module.css';
 import m from '../../assets/images/m.png';
 
-export default function EaseIn() {
+export default function EaseOut() {
   return (
     <div className={styles.box}>
       
       <div className={styles.item}>
         <pre>
           <code>
-            {`<motion.img
+{`<motion.img
   src={m}
-  alt="Opacidad"
+  alt="Ease Out"
   className={styles.circle}
-  initial={{ opacity: 0.2 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 2, 
-  repeat: Infinity, 
-  repeatType: 'reverse' 
+  initial={{ x: -100 }}
+  animate={{ x: 100 }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    repeatType: 'reverse',
+    ease: 'easeOut'
   }}
 />`}
-
-{/* CAMBIAR
-      
-             <motion.img
-      src={m}
-      alt="Ease Out"
-      className={styles.circle}
-      initial={{ x: -100 }}
-      animate={{ x: 100 }}
-      transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', ease: 'easeOut' }}
-    />*/}
           </code>
         </pre>
       </div>
 
       <div className={styles.item}>
-      
-              <motion.img
-      src={m}
-      alt="Ease Out"
-      className={styles.circle}
-      initial={{ x: -100 }}
-      animate={{ x: 100 }}
-      transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', ease: 'easeOut' }}
-    />
+        <motion.img
+          src={m}
+          alt="Ease Out"
+          className={styles.circle}
+          initial={{ x: -100 }}
+          animate={{ x: 100 }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            ease: 'easeOut'
+          }}
+        />
       </div>
 
       <div className={styles.item}>
-       <p>
-  La propiedad <strong>opacity</strong> en Framer Motion controla la transparencia de un elemento. Un valor de <strong>opacity: 0</strong> lo hace invisible y <strong>opacity: 1</strong> lo hace totalmente visible. <br /><br />
-  En este caso, la animación varía entre <strong>opacity: 0.2</strong> y <strong>opacity: 1</strong>, creando un efecto de aparición y desaparición continuo.
-</p>
-
+        <p>
+          Esta animación aplica la función de easing <strong>easeOut</strong>, que acelera rápidamente al inicio del movimiento y luego desacelera hacia el final. <br /><br />
+          El movimiento se da de <code>x: -100</code> a <code>x: 100</code> y se repite de forma infinita, creando un efecto de entrada rápida y salida suave en ambos sentidos.
+        </p>
       </div>
     </div>
   );
 }
-
-
 
