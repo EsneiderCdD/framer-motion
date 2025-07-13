@@ -1,5 +1,5 @@
 import React from 'react';
-import BasicMovement from './BasicMovement';
+
 import ScaleKeyframes from './ScaleKeyframes';
 import RotateKeyframes from './RotateKeyframes';
 import OpacityKeyframes from './OpacityKeyframes';

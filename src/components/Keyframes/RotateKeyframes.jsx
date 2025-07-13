@@ -4,58 +4,41 @@ import styles from './Keyframes.module.css';
 import m from '../../assets/images/m.png';
 
 export default function RotateKeyframes() {
+  const codeString = `<motion.img
+  src={m}
+  alt="Rotate Keyframes"
+  className={styles.circle}
+  animate={{ rotate: [0, 90, 180, 270, 360] }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    repeatType: 'mirror'
+  }}
+/>`;
+
   return (
     <div className={styles.box}>
-      
       <div className={styles.item}>
-        <pre>
-          <code>
-            {`<motion.img
-  src={m}
-  alt="Opacidad"
-  className={styles.circle}
-  initial={{ opacity: 0.2 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 2, 
-  repeat: Infinity, 
-  repeatType: 'reverse' 
-  }}
-/>`}
-
-{/* CAMBIAR
-        <motion.img
-      src={m}
-      alt="Rotate Keyframes"
-      className={styles.circle}
-      animate={{ rotate: [0, 90, 180, 270, 360] }}
-      transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-    />*/}
-          </code>
+        <pre className={styles.codeBlock}>
+          <code>{codeString}</code>
         </pre>
       </div>
 
       <div className={styles.item}>
-                <motion.img
-      src={m}
-      alt="Rotate Keyframes"
-      className={styles.circle}
-      animate={{ rotate: [0, 90, 180, 270, 360] }}
-      transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-    />
+        <motion.img
+          src={m}
+          alt="Rotate Keyframes"
+          className={styles.circle}
+          animate={{ rotate: [0, 90, 180, 270, 360] }}
+          transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
+        />
       </div>
 
       <div className={styles.item}>
-       <p>
-  La propiedad <strong>opacity</strong> en Framer Motion controla la transparencia de un elemento. Un valor de <strong>opacity: 0</strong> lo hace invisible y <strong>opacity: 1</strong> lo hace totalmente visible. <br /><br />
-  En este caso, la animación varía entre <strong>opacity: 0.2</strong> y <strong>opacity: 1</strong>, creando un efecto de aparición y desaparición continuo.
-</p>
-
+        <p>
+          La imagen rota de <code>0°</code> a <code>360°</code> en cinco pasos durante 4 segundos, avanzando 90° por segundo. Con <code>repeatType: 'mirror'</code>, la animación se reproduce en reversa temporalmente, manteniendo el mismo orden de valores. A diferencia de <code>'reverse'</code>, que invierte el array, <code>'mirror'</code> invierte la dirección del tiempo.
+        </p>
       </div>
     </div>
   );
 }
-
-
-
-
-

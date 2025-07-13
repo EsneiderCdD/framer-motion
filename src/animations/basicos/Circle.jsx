@@ -13,36 +13,34 @@ function Circle() {
       }}
   transition={{ duration: 10 }}
 >
-  Slide X
+  Circle
 </motion.div>`;
 
   return (
     <AnimationBox
-      initial= {{ x: -100, y: -100 }}
-      animate= {{ x: 100, y: 100 }}
-      
-      transition={{ duration: 7.5, repeat: Infinity }}
+      initial={{ x: 0, y: 0 }}
+        animate={{
+        x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
+        y: [-100, -70, 0, 70, 100, 70, 0, -70, -100]
+      }}
+  transition={{ duration: 10 }}
     >
-     <h2>Movimiento en el eje XY</h2> 
-                <h3>Initial, Animate y Transition </h3>
-                <div className={styles.content}>
-                  <div className={styles.txt}>
-                    <p>
-                      Este es un ejemplo básico de movimiento en el eje X usando Framer Motion.
-                      Aquí configuramos <strong>initial</strong> como <code>x: -100</code>, lo que significa que empieza 100 píxeles a la izquierda.
-                    </p>
-                    <p>
-                      Luego, <strong>animate</strong> mueve el elemento a <code>x: 0</code>, su posición original,
-                      y la <strong>transition</strong> define que este cambio tarda 1 segundo.
-                    </p>
-                  </div>
-                  <pre className={styles.codeBlock}>
-                    <code>{codeString}</code>
-                  </pre>
-                </div>
+     <h2>Vuelta</h2> 
+      <h3>Initial, Animate y Transition </h3>
+      <div className={styles.content}>
+        <div className={styles.txt}>
+          <p>
+            En esta sección introducimos el uso de <strong>keyframes</strong> en Framer Motion, una técnica que permite definir secuencias de valores para una propiedad, generando movimientos más complejos y fluidos. En lugar de animar de un punto A a un punto B, especificamos una lista de valores intermedios que el elemento recorrerá en orden, creando trayectorias como curvas, zigzags o ciclos.
+          </p>
+          <p>
+            El siguiente ejemplo aplica esta técnica sobre los ejes <code>x</code> y <code>y</code>. Definimos una lista de valores para cada uno, creando una animación que simula un recorrido circular. Esta secuencia se controla mediante la propiedad <code>transition</code>, especificando su duración total.
+          </p>
 
-
-
+        </div>
+        <pre className={styles.codeBlock}>
+          <code>{codeString}</code>
+        </pre>
+      </div>
       {/* Video incrustado */}
       <div style={{ marginTop: '2rem' }}>
         <iframe
@@ -56,8 +54,7 @@ function Circle() {
           allowFullScreen
         ></iframe>
       </div>
-
-            {/* Enlace para descargar el documento */}
+      {/* Enlace para descargar el documento */}
       <a
         href="/documents/01.docx"
         download
