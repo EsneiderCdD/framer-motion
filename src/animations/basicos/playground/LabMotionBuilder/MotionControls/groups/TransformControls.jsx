@@ -1,24 +1,20 @@
+import DualNumberInput from '../shared/DualNumberInput';
+
 function TransformControls({ motionProps, setMotionProp }) {
   return (
-    <>
-      <label>
-        Scale:
-        <input
-          type="number"
-          step="0.1"
-          value={motionProps.scale}
-          onChange={e => setMotionProp('scale', parseFloat(e.target.value))}
-        />
-      </label>
-      <label>
-        Rotate:
-        <input
-          type="number"
-          value={motionProps.rotate}
-          onChange={e => setMotionProp('rotate', parseInt(e.target.value))}
-        />
-      </label>
-    </>
+    <div>
+      <h3>Transformación</h3>
+      <DualNumberInput
+        label="Scale"
+        value={motionProps.scale}
+        onChange={val => setMotionProp('scale', 'initial', val.initial) || setMotionProp('scale', 'animate', val.animate)}
+      />
+      <DualNumberInput
+        label="Rotate"
+        value={motionProps.rotate}
+        onChange={val => setMotionProp('rotate', 'initial', val.initial) || setMotionProp('rotate', 'animate', val.animate)}
+      />
+    </div>
   );
 }
 
