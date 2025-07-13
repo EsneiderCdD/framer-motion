@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card/Card';
 import styles from './Home.module.css';
-import m from '../assets/images/m.png'
+import m from '../assets/images/m.png';
+
 
 const cardAnimations = {
   basicos: {
@@ -49,6 +50,8 @@ function Home() {
           </li>
         </ul>
       </nav>
+
+
       
       
     </div>
