@@ -1,5 +1,5 @@
-import MotionControls from './MotionControls/MotionControls';
-import MotionPreview from './MotionPreview/MotionPreview';
+import MotionControls from './MotionControls';
+import MotionPreview from './MotionPreview';
 import styles from './styles.module.css';
 import { useMotionConfig } from './useMotionConfig';
 
