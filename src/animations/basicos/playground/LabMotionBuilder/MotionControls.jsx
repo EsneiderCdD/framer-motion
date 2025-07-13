@@ -1,5 +1,3 @@
-// File: components/LabMotionBuilder/MotionControls.jsx
-import React from 'react';
 import styles from './LabMotionBuilder.module.css';
 
 function MotionControls({ motionProps, transitionProps, setMotionProp, setTransitionProp }) {

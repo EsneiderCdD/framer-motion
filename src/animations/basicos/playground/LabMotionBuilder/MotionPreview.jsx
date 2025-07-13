@@ -1,5 +1,3 @@
-// File: components/LabMotionBuilder/MotionPreview.jsx
-import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './LabMotionBuilder.module.css';
 import m from '../../../../assets/images/m.png';
