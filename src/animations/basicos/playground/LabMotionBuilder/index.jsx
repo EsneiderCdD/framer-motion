@@ -1,7 +1,10 @@
+// LabMotionBuilder/index.jsx
 import MotionControls from './MotionControls';
 import MotionPreview from './MotionPreview';
-import styles from './styles.module.css';
+import PlaybackControls from './PlaybackControls';
 import { useMotionConfig } from './useMotionConfig';
+import styles from './styles.module.css';
+import { useState } from 'react';
 
 function LabMotionBuilder() {
   const {
@@ -10,6 +13,8 @@ function LabMotionBuilder() {
     updateMotionProp,
     updateTransitionProp,
   } = useMotionConfig();
+
+  const [playbackState, setPlaybackState] = useState('idle');
 
   return (
     <div className={styles.builderContainer}>
@@ -21,10 +26,14 @@ function LabMotionBuilder() {
           setMotionProp={updateMotionProp}
           setTransitionProp={updateTransitionProp}
         />
-        <MotionPreview
-          motionProps={motionProps}
-          transitionProps={transitionProps}
-        />
+        <div>
+          <MotionPreview
+            motionProps={motionProps}
+            transitionProps={transitionProps}
+            playbackState={playbackState}
+          />
+          <PlaybackControls setPlaybackState={setPlaybackState} />
+        </div>
       </div>
     </div>
   );
