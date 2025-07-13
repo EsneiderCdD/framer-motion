@@ -5,6 +5,8 @@ import Circle from './Circle';
 import CirclePerfect from './CirclePerfect';
 import Mov from './Duration';
 import RandomMotion from './RandomMotion';
+import LabMotionBuilder from './playground/LabMotionBuilder/LabMotionBuilder';
+
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
 const circleMotion = generateCircleKeyframes(40, 100);
@@ -140,5 +142,15 @@ export const catalogContent = [
   speed: 0.5,    // Medio segundo entre cada salto
   rangeX: 50,   // Movimiento máximo en X de +/- 150px
   rangeY: 50 ,   // Movimiento máximo en Y de +/- 150px
+  },
+   {
+  type: 'animation',
+  id: 'Framer-Motion-Lab',
+  titulo: 'Framer Motion Lab',
+  descripcion: 'Intectua con un panel de animaciones',
+  componente: LabMotionBuilder,
+    animation: {
+      animate: { x: 0},
+    }
   }
 ];
