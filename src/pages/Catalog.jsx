@@ -33,6 +33,10 @@ function Catalog() {
               animation={item.animation}
               animation1={item.animation1}
               animation2={item.animation2}
+              random={item.random}
+              speed={item.speed}       
+              rangeX={item.rangeX}     
+              rangeY={item.rangeY} 
             />
           );
         })}

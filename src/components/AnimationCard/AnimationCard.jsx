@@ -2,24 +2,28 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styles from '../../components/AnimationCard/AnimationCard.module.css';
 import m from '../../assets/images/m.png';
+import RandomMotion from '../../animations/basicos/RandomMotion';
 
-function AnimationCard({ id, titulo, descripcion, tema, animation, animation1, animation2 }) {
+function AnimationCard({ id, titulo, descripcion, tema, animation, animation1, animation2, random }) {
   return (
     <div className={styles.card}>
-      {/* Si la animación es comparativa */}
-      {animation1 && animation2 ? (
+      
+
+      {random ? (
+        <RandomMotion />
+      ) : animation1 && animation2 ? (
         <div className={styles.dualImageContainer}>
           <motion.img
             src={m}
             alt="Animación 1"
             className={styles.image}
-            {...animation1} // Aplicamos animación 1
+            {...animation1} 
           />
           <motion.img
             src={m}
             alt="Animación 2"
             className={styles.image}
-            {...animation2} // Aplicamos animación 2
+            {...animation2} 
           />
         </div>
       ) : (
@@ -28,7 +32,7 @@ function AnimationCard({ id, titulo, descripcion, tema, animation, animation1, a
           src={m}
           alt="Animación Framer Motion"
           className={styles.image}
-          {...animation} // Aplicamos animación simple
+          {...animation} 
         />
       )}
 
