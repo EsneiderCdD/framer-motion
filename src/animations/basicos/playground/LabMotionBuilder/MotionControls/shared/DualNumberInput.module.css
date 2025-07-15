@@ -11,6 +11,7 @@
 }
 
 .input {
+  width: 100px;
   flex: 1;
   padding: 4px 8px;
   border-radius: 4px;
