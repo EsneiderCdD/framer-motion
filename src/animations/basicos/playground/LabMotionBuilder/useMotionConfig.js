@@ -1,3 +1,4 @@
+// useMotionConfig.js
 import { useState } from 'react';
 
 export function useMotionConfig() {
@@ -6,6 +7,7 @@ export function useMotionConfig() {
     y: { initial: 0, animate: 100 },
     scale: { initial: 1, animate: 2 },
     rotate: { initial: 0, animate: 90 },
+    backgroundColor: { initial: '#ffffff', animate: '#0000ff' }, // ← NUEVO formato
   });
 
   const [transitionProps, setTransitionProps] = useState({

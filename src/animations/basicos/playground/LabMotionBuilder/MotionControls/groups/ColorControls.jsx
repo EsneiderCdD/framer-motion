@@ -1,13 +1,19 @@
+// groups/ColorControls.jsx
+import DualColorInput from '../shared/DualColorInput';
+
 function ColorControls({ motionProps, setMotionProp }) {
   return (
-    <label>
-      Background Color:
-      <input
-        type="color"
+    <div>
+      <h3>🎨 Color</h3>
+      <DualColorInput
+        label="Background"
         value={motionProps.backgroundColor}
-        onChange={e => setMotionProp('backgroundColor', e.target.value)}
+        onChange={val => {
+          setMotionProp('backgroundColor', 'initial', val.initial);
+          setMotionProp('backgroundColor', 'animate', val.animate);
+        }}
       />
-    </label>
+    </div>
   );
 }
 
