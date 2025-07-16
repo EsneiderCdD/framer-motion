@@ -1,28 +1,26 @@
-// src/animations/basicos/SlideX.jsx
+
 import AnimationBox from '../../components/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 
 function SlideX() {
   const codeString = `<motion.div
-  initial={{ x: -100 }}
-  animate={{ x: 0 }}
-  transition={{ duration: 1 }}
+initial={{ x: -100 }}
+animate={{ x: 0 }}
+transition={{ duration: 1 }}
 >
-  Slide X
+Slide X
 </motion.div>`;
 
   return (
     <AnimationBox
       initial={{ x: -250 }}
       animate={{ x: 0 }}
-      transition={{ duration: 10 ,
+      transition={{
+        duration: 10,
         repeat: Infinity
-        
-
       }}
-
     >
-      <h2>Movimiento en el eje X</h2> 
+      <h2>Movimiento en el eje X</h2>
       <h3>Initial, Animate y Transition </h3>
       <div className={styles.content}>
         <div className={styles.txt}>
