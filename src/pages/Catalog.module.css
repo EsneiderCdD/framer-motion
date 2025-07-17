@@ -1,22 +1,24 @@
-/* src/pages/Catalog.module.css */
-
 
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-top: 1%;
+  margin-bottom: 3rem;
   text-align: center;
 }
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: auto;
   gap: 1.5rem;
   padding: 1rem;
 }
 
+
+
 .sectionTitle {
   grid-column: 1 / -1; /* Hace que el título ocupe todo el ancho de la grilla */
-  margin: 2rem 0 1rem;
   font-size: 1.5rem;
   font-weight: bold;
 }

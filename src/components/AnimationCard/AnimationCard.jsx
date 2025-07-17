@@ -28,17 +28,21 @@ function AnimationCard({ id, titulo, descripcion, tema, animation, animation1, a
         </div>
       ) : (
         // Si la animación es individual
-        <motion.img
-          src={m}
-          alt="Animación Framer Motion"
-          className={styles.image}
-          {...animation} 
-        />
+        <div className={styles.example}>
+          <motion.img
+            src={m}
+            alt="Animación Framer Motion"
+            className={styles.image}
+            {...animation}
+          />
+        </div>
       )}
 
-      <h3>{titulo}</h3>
-      <p>{descripcion}</p>
-      <Link to={`/catalog/${tema}/${id}`}>Ver más</Link>
+      <div className= {styles.content}>
+        <h3>{titulo}</h3>
+        <p>{descripcion}</p>
+        <Link to={`/catalog/${tema}/${id}`}>Ver más</Link>
+      </div>
     </div>
   );
 }
