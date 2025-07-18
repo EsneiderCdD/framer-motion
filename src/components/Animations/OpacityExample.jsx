@@ -12,10 +12,8 @@ export default function OpacityExample() {
   className={styles.circle}
   initial={{ opacity: 0.2 }}
   animate={{ opacity: 1 }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  transition={{ repeat: Infinity , repeatType: 'reverse',
+                duration: 2
   }}
 />`;
 

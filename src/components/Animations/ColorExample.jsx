@@ -1,23 +1,17 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Animations.module.css';
-import m from '../../assets/images/m.png';
+import m from '../../assets/images/m.svg';
 
 export default function ColorExample() {
   const [showCode, setShowCode] = useState(false);
 
   const codeString = `<motion.div
   className={styles.circleWrapper}
-  initial={{ 
-    backgroundColor: '#F6EA11' 
-  }}
-  animate={{ 
-    backgroundColor: '#000000' 
-  }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  initial={{ backgroundColor: '#F6EA11' }}
+  animate={{ backgroundColor: '#000000' }}
+  transition={{ repeat: Infinity, repeatType: 'reverse',
+                duration: 2
   }}
 >
   <img src={m} 

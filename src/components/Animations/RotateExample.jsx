@@ -12,10 +12,8 @@ export default function RotateExample() {
   className={styles.circle}
   initial={{ rotate: 0 }}
   animate={{ rotate: 360 }}
-  transition={{
-    duration: 5,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  transition={{ repeat: Infinity, repeatType: 'reverse',
+                duration: 5
   }}
 />
 
@@ -25,10 +23,8 @@ export default function RotateExample() {
   className={styles.circle}
   initial={{ rotateX: 0 }}
   animate={{ rotateX: 360 }}
-  transition={{
-    duration: 5,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  transition={{ repeat: Infinity, repeatType: 'reverse',
+                duration: 5
   }}
 />
 
@@ -38,10 +34,8 @@ export default function RotateExample() {
   className={styles.circle}
   initial={{ rotateY: 0 }}
   animate={{ rotateY: 360 }}
-  transition={{
-    duration: 5,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  transition={{ repeat: Infinity, repeatType: 'reverse'
+                duration: 5,
   }}
 />`;
 

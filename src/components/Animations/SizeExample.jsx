@@ -10,18 +10,10 @@ export default function SizeExample() {
   src={m}
   alt="Tamaño"
   className={styles.circle}
-  initial={{
-    width: '100px',
-    height: '100px'
-  }}
-  animate={{
-    width: '150px',
-    height: '150px'
-  }}
-  transition={{
-    duration: 10,
-    repeat: Infinity,
-    repeatType: 'reverse'
+  initial={{ width: '100px', height: '100px' }}
+  animate={{ width: '150px', height: '150px' }}
+  transition={{ repeat: Infinity, repeatType: 'reverse'
+                duration: 10
   }}
 />`;
 

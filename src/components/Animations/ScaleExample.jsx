@@ -12,8 +12,7 @@ export default function ScaleExample() {
   className={styles.circle}
   initial={{ scale: 1.5 }}
   animate={{ scale: 0 }}
-  transition={{ duration: 2, 
-                repeat: Infinity }}
+  transition={{ duration: 2, repeat: Infinity }}
 />`;
 
   return (
