@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Animations.module.css';
 import m from '../../assets/images/m.png';
 
 export default function ColorExample() {
+  const [showCode, setShowCode] = useState(false);
+
   const codeString = `<motion.div
   className={styles.circleWrapper}
   initial={{ 
@@ -25,12 +27,14 @@ export default function ColorExample() {
 
   return (
     <div className={styles.box}>
+      {/* TOGGLE */}
       <div className={styles.item}>
-        <pre className={styles.codeBlock}>
-          <code>{codeString}</code>
-        </pre>
+        <button onClick={() => setShowCode(prev => !prev)}>
+          {showCode ? 'i' : '<>'}
+        </button>
       </div>
 
+      {/* VISUAL */}
       <div className={styles.item}>
         <motion.div
           className={styles.circleWrapper}
@@ -42,10 +46,17 @@ export default function ColorExample() {
         </motion.div>
       </div>
 
+      {/* CODE O DESCRIPCIÓN */}
       <div className={styles.item}>
-        <p>
-          En Framer Motion también podemos animar propiedades visuales como el <strong>backgroundColor</strong>, permitiendo transiciones suaves entre colores.
-        </p>
+        {showCode ? (
+          <pre className={styles.codeBlock}>
+            <code>{codeString}</code>
+          </pre>
+        ) : (
+          <p>
+            En Framer Motion también podemos animar propiedades visuales como el <strong>backgroundColor</strong>, permitiendo transiciones suaves entre colores. Con <strong>repeatType: 'reverse'</strong>, la animación rebota entre los valores iniciales y finales.
+          </p>
+        )}
       </div>
     </div>
   );
