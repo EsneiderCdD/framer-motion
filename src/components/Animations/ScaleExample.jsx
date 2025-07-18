@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Animations.module.css';
 import m from '../../assets/images/m.png';
