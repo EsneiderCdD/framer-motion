@@ -2,26 +2,25 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
+  flex-direction: column;
 
+
+}
 .item {
   display: flex;
-  flex-direction: column;
+  
   height: 100%;
   margin: auto;
   flex: 1;
   max-width: 600px;
   gap: 4rem;
-  text-align: justify;
+  text-align: justify;  
 }
-
 .item pre code {
   display: flex;
-  text-align: left;
-  white-space: pre-wrap;
+ text-align: left;
 }
-
-.item code {
+.item code { 
   text-align: left;
 }
 
@@ -30,10 +29,23 @@
   height: 100px;
   margin: auto;
   border-radius: 50%;
+
+
 }
 
 .circleWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.item button {
+  background: none;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
 }
