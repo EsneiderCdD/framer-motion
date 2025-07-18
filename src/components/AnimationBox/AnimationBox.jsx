@@ -1,7 +1,6 @@
-// src/components/AnimationBox/AnimationBox.jsx
 import { motion } from 'framer-motion';
 import styles from './AnimationBox.module.css'; 
-import m from  '../../assets/images/m.png'; 
+import m from  '../../assets/images/m.svg'; 
 
 function AnimationBox({ initial, animate, transition, children }) {
   return (
@@ -15,7 +14,7 @@ function AnimationBox({ initial, animate, transition, children }) {
         <img src={m} alt="Framer Motion Logo" className={styles.logo} />
       </motion.div>
       <div className={styles.description}>
-        {children} {/* Aquí mostramos la explicación y el código */}
+        {children}
       </div>
     </div>
   );
