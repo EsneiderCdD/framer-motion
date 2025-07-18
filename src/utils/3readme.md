@@ -136,3 +136,78 @@ El contenido se organiza por niveles para guiar tu aprendizaje paso a paso.
 💡 Asegúrate de dominar cada nivel antes de avanzar al siguiente para un aprendizaje progresivo y efectivo.
 
 ---
+
+
+
+
+
+
+🟢 BÁSICOS
+Estos temas cubren lo esencial para comenzar con Framer Motion y entender su filosofía declarativa para animaciones.
+
+✅ Temas a abordar:
+Introducción a Framer Motion
+
+¿Qué es Framer Motion?
+Ventajas frente a otras librerías (como GSAP, React Spring)
+motion Components
+Uso de <motion.div> y otros elementos (motion.button, etc.)
+Diferencias con elementos HTML normales
+Propiedades de animación (animate, initial, exit)
+Uso básico
+Cómo definir el estado inicial y el destino
+Variants vs valores individuales
+Transiciones (transition)
+Tipos de transición: tween, spring, inertia
+Duración, retardo, easing
+Control de fricción y rebote con spring
+Variants
+Definición de variantes de estado
+Uso en componentes anidados
+Coordinación entre hijos y padres
+Keyframes
+Uso de arrays para animaciones secuenciales
+Aplicación de transition.times
+AnimatePresence
+Animaciones de entrada/salida
+Uso con exit y claves de React
+Animaciones condicionales
+
+🟡 GESTURES (gestos)
+Aquí se explora la interacción con el usuario a través de movimientos del mouse o táctiles.
+
+✅ Temas a abordar:
+whileHover y whileTap
+Efectos visuales al pasar el mouse o hacer clic
+Combinación con variants
+drag
+Activar arrastre en un elemento
+dragConstraints (limitación del área de arrastre)
+dragElastic, dragMomentum
+onDragStart, onDragEnd, etc.
+Eventos del ciclo de vida del drag
+Registro de movimiento o detección de direcciones
+Gestos personalizados
+Uso de useMotionValue y useTransform para reacciones complejas
+Animaciones basadas en desplazamiento
+hover, tap, focus states con useCycle o variants
+Alternancia de estados mediante interacciones
+
+🔵 LAYOUT (animaciones de disposición)
+Esta categoría aborda animaciones relacionadas con cambios en la disposición de los elementos.
+
+✅ Temas a abordar:
+layout Prop
+Animación automática de cambios en tamaño o posición
+Reordenamiento animado de elementos
+layoutId y Shared Layout Transitions
+Transiciones entre páginas o secciones
+Ejemplo típico: galería -> vista de detalle
+Layout Animations + AnimatePresence
+Animaciones suaves en transiciones de rutas o componentes dinámicos
+Gestión de stacks y z-index (positionTransition)
+Animación de cambio de posición relativa
+Apilamiento dinámico de componentes
+Uso avanzado de motion.div layoutScroll (si aplica)
+Animaciones dependientes del scroll (experimental)
+
