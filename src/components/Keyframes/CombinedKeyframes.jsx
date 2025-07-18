@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Keyframes.module.css';
 import m from '../../assets/images/m.png';
 
 export default function CombinedKeyframes() {
+  const [showCode, setShowCode] = useState(false);
+
   const codeString = `<motion.img
   src={m}
   alt="Combined Keyframes"
@@ -19,11 +21,10 @@ export default function CombinedKeyframes() {
   return (
     <div className={styles.box}>
       <div className={styles.item}>
-        <pre className={styles.codeBlock}>
-          <code>{codeString}</code>
-        </pre>
+        <button onClick={() => setShowCode(prev => !prev)}>
+          {showCode ? 'i' : '<>'}
+        </button>
       </div>
-
       <div className={styles.item}>
         <motion.img
           src={m}
@@ -37,11 +38,17 @@ export default function CombinedKeyframes() {
           transition={{ duration: 4, repeat: Infinity }}
         />
       </div>
-
       <div className={styles.item}>
-        <p>
-          Esta animación combina tres propiedades clave: <code>x</code> para desplazar el elemento lateralmente, <code>scale</code> para hacerlo crecer y encoger, y <code>opacity</code> para hacerlo más o menos visible. El resultado es un movimiento dinámico, que en 4 segundos recorre cinco pasos creando un ritmo cíclico continuo.
-        </p>
+        {showCode ? (
+          <pre className={styles.codeBlock}>
+            <code>{codeString}</code>
+          </pre>
+        ) : (
+          <p>
+            Esta animación combina tres propiedades clave: <code>x</code> para desplazar el elemento lateralmente, <code>scale</code> para hacerlo crecer y encoger, y <code>opacity</code> para hacerlo más o menos visible. 
+            El resultado es un movimiento dinámico, que en 4 segundos recorre cinco pasos creando un ritmo cíclico continuo.
+          </p>
+        )}
       </div>
     </div>
   );
