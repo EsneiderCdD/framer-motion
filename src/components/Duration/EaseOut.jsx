@@ -1,16 +1,13 @@
 // src/components/Duration/EaseOut.jsx
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Duration.module.css';
 import m from '../../assets/images/m.png';
 
 export default function EaseOut() {
-  return (
-    <div className={styles.box}>
-      
-      <div className={styles.item}>
-        <pre>
-          <code>
-{`<motion.img
+  const [showCode, setShowCode] = useState(false);
+
+  const codeString = `<motion.img
   src={m}
   alt="Ease Out"
   className={styles.circle}
@@ -22,9 +19,14 @@ export default function EaseOut() {
     repeatType: 'reverse',
     ease: 'easeOut'
   }}
-/>`}
-          </code>
-        </pre>
+/>`;
+
+  return (
+    <div className={styles.box}>
+      <div className={styles.item}>
+        <button onClick={() => setShowCode(prev => !prev)}>
+          {showCode ? 'i' : '<>'}
+        </button>
       </div>
 
       <div className={styles.item}>
@@ -44,12 +46,17 @@ export default function EaseOut() {
       </div>
 
       <div className={styles.item}>
-        <p>
-          Esta animación aplica la función de easing <strong>easeOut</strong>, que acelera rápidamente al inicio del movimiento y luego desacelera hacia el final. <br /><br />
-          El movimiento se da de <code>x: -100</code> a <code>x: 100</code> y se repite de forma infinita, creando un efecto de entrada rápida y salida suave en ambos sentidos.
-        </p>
+        {showCode ? (
+          <pre className={styles.codeBlock}>
+            <code>{codeString}</code>
+          </pre>
+        ) : (
+          <p>
+            Esta animación aplica la función de easing <strong>easeOut</strong>, que acelera rápidamente al inicio del movimiento y luego desacelera hacia el final. <br /><br />
+            El movimiento se da de <code>x: -100</code> a <code>x: 100</code> y se repite de forma infinita, creando un efecto de entrada rápida y salida suave en ambos sentidos.
+          </p>
+        )}
       </div>
     </div>
   );
 }
-
