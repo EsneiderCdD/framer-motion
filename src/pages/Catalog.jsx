@@ -1,20 +1,31 @@
 import { useParams } from 'react-router-dom';
 import AnimationCard from '../components/AnimationCard/AnimationCard';
 import styles from './Catalog.module.css';
-import { catalogContent } from '../animations/basicos/meta';
+
+import { catalogContent as basicos } from '../animations/basicos/meta';
+import { catalogContent as gestures } from '../animations/gestures/meta'; // 👈 Nuevo
+
+const temas = {
+  basicos,
+  gestures,
+};
 
 function Catalog() {
   const { tema } = useParams();
+  const catalog = temas[tema]; // 👈 Selección dinámica del contenido
+
+  if (!catalog) {
+    return <p>⚠️ Tema no encontrado: "{tema}"</p>; // 👈 Protección contra rutas inválidas
+  }
 
   return (
     <div>
       <div className={styles.title}>
-        <h2>Nivel Basico</h2>
-        
+        <h2>Tema: {tema.charAt(0).toUpperCase() + tema.slice(1)}</h2>
       </div>
 
       <div className={styles.gridContainer}>
-        {tema === 'basicos' && catalogContent.map((item, index) => {
+        {catalog.map((item, index) => {
           if (item.type === 'title') {
             return (
               <div key={index} className={styles.sectionTitle}>
@@ -34,28 +45,15 @@ function Catalog() {
               animation1={item.animation1}
               animation2={item.animation2}
               random={item.random}
-              speed={item.speed}       
-              rangeX={item.rangeX}     
-              rangeY={item.rangeY} 
+              speed={item.speed}
+              rangeX={item.rangeX}
+              rangeY={item.rangeY}
             />
           );
         })}
-
       </div>
     </div>
   );
 }
 
 export default Catalog;
-
-
-// // import { animations as basicos } from '../animations/basicos/meta';
-// import { animations as gestures } from '../animations/gestures/meta';
-
-// const temas = {
-//   basicos,
-//   gestures,
-// };
-
-// const animations = temas[tema] || [];
-// //
