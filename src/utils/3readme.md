@@ -2,11 +2,7 @@
 
 ## 🟢 Principiante:
 
-- **Tema 1: Introducción a motion.div**  
-  Aprende qué es `motion.div` y cómo reemplaza a un div normal para tener animaciones.
 
-- **Tema 2: Props básicas – initial, animate, transition**  
-  Estudia cómo definir el estado inicial, el estado animado y configurar la transición.
 
 - **Tema 3: Hover y Tap (Interacción)**  
   Uso de `whileHover` y `whileTap` para animaciones responsivas al usuario.

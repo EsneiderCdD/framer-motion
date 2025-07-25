@@ -1,6 +1,7 @@
 // gestures/index.jsx
 import DragMoveExample from "./DragMoveExample";
 import DragConstraintExample from "./DragConstraintExample";
+import DragElastic from "./DragElastic";
 import styles from "./styles.module.css";
 
 export default function GestureCatalog() {
@@ -10,6 +11,8 @@ export default function GestureCatalog() {
 
       <DragMoveExample />
       <DragConstraintExample />
+      <DragElastic />
+
     </div>
   );
 }
