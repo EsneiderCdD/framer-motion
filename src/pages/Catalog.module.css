@@ -8,8 +8,8 @@
 }
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 600px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
   margin: auto;
   gap: 1.5rem;
   padding: 1rem;
