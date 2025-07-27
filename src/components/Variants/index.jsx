@@ -1,7 +1,7 @@
 // src/components/Variants/index.jsx
 
 import VariantStagger from './VariantStagger';
-import VariantControl from './VariantControl';
+import VariantControl from './VariantControl.jsx';
 import VariantCondition from './VariantCondition';
 import VariantSequence from './VariantSequence';
 
