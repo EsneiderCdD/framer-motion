@@ -1,7 +1,7 @@
 // DragConstraints.jsx
 import AnimationBox from "../../components/AnimationBox/AnimationBox";
 import styles from "./styles.module.css";
-import GestureCatalog from "../../components/Gestures/index";
+import GestureCatalog from "../../components/Drag/index";
 function DragConstraints() {
   const codeString = `<motion.div drag dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}>
   Arrástrame dentro del área

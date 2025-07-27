@@ -1,7 +1,7 @@
 // DragBasic.jsx
 import AnimationBox from "../../components/AnimationBox/AnimationBox";
 import styles from "./styles.module.css";
-import GestureCatalog from "../../components/Gestures/index";
+import GestureCatalog from "../../components/Drag/index";
 
 function DragBasic() {
   const codeString = `<motion.div drag>Arrástrame</motion.div>`;
