@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import styles from './styles.module.css';
-import m from '../../assets/m.svg';
+import m from '../../assets/images/m.svg';
+
 
 const containerVariants = {
   hidden: { opacity: 0 },

@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import styles from './styles.module.css';
-import m from '../../assets/m.svg';
+import m from '../../assets/images/m.svg';
+
 
 const variants = {
   active: { x: 100, scale: 1.2 },
