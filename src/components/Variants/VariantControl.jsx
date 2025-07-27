@@ -20,8 +20,9 @@ export default function VariantControl() {
         <div>
           <h3>Control de estados</h3>
           <p>
-            Puedes usar `variants` con estados externos usando `animate={estado ? "on" : "off"}`. Esto te da un control completo desde React.
+            Puedes usar <code>variants</code> con estados externos usando <code>animate={active ? "on" : "off"}</code>. Esto te da un control completo desde React.
           </p>
+
           <button onClick={() => setActive(!active)}>
             {active ? 'Desactivar' : 'Activar'}
           </button>
