@@ -11,25 +11,20 @@
 
 .logo {
     border: 50%;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     display: flex;
     border-radius: 40%;
-}
-
-.logo img {
     width: 200px;
-    height: 200px; /* Nuevo */
-   
+    height: 200px;
 }
-
 
 .menu ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
 }
 
 .menu li {
-  text-decoration: none;
+    text-decoration: none;
 }
