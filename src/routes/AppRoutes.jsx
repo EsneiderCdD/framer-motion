@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Catalog from '../pages/Catalog/Catalog';
-import Detail from '../pages/Detail';
+import Detail from '../pages/Detail/Detail';
 
 function AppRoutes() {
   return (

@@ -2,15 +2,15 @@ import { useParams } from 'react-router-dom';
 import AnimationCard from '../../components/AnimationCard/AnimationCard';
 import styles from './styles/Catalog.module.css';
 
-import { themes } from './data/themes';
+import { themes } from '../../data/themes';
 
 
 function Catalog() {
   const { tema } = useParams();
-  const catalog = themes[tema]; 
+  const catalog = themes[tema];
 
   if (!catalog) {
-    return <p>Tema no encontrado: "{tema}"</p>; 
+    return <p>Tema no encontrado: "{tema}"</p>;
   }
 
   return (
