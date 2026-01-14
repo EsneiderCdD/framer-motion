@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
-import AnimationCard from '../../components/AnimationCard/AnimationCard';
+import AnimationCard from './AnimationCard/AnimationCard';
 import styles from './styles/Catalog.module.css';
-
 import { themes } from '../../data/themes';
 
 
