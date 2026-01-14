@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import styles from './AnimationBox.module.css'; 
-import m from  '../../assets/images/m.svg'; 
+import styles from './styles/AnimationBox.module.css';
+import m from '../../../assets/images/m.svg';
 
 function AnimationBox({ initial, animate, transition, children }) {
   return (

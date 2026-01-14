@@ -1,5 +1,5 @@
 // src/animations/basicos/SlideY.jsx
-import AnimationBox from '../../components/AnimationBox/AnimationBox';
+import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 import AnimationCatalog from '../../components/Animations';
 

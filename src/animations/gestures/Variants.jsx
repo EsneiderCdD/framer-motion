@@ -1,6 +1,6 @@
 // src/animations/gestures/Variants.jsx
 
-import AnimationBox from '../../components/AnimationBox/AnimationBox';
+import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './styles.module.css';
 import VariantsCatalog from '../../components/Variants/index';
 

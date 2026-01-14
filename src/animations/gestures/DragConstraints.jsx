@@ -1,5 +1,5 @@
 // DragConstraints.jsx
-import AnimationBox from "../../components/AnimationBox/AnimationBox";
+import AnimationBox from "../../components/shared/AnimationBox/AnimationBox";
 import styles from "./styles.module.css";
 import GestureCatalog from "../../components/Drag/index";
 function DragConstraints() {

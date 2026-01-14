@@ -1,4 +1,4 @@
-import AnimationBox from '../../components/AnimationBox/AnimationBox';
+import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
 import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
 
