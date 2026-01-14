@@ -1,21 +1,16 @@
 import { useParams } from 'react-router-dom';
-import AnimationCard from '../components/AnimationCard/AnimationCard';
-import styles from './Catalog.module.css';
+import AnimationCard from '../../components/AnimationCard/AnimationCard';
+import styles from './styles/Catalog.module.css';
 
-import { catalogContent as basicos } from '../animations/basicos/meta';
-import { catalogContent as gestures } from '../animations/gestures/meta'; // 👈 Nuevo
+import { themes } from './data/themes';
 
-const temas = {
-  basicos,
-  gestures,
-};
 
 function Catalog() {
   const { tema } = useParams();
-  const catalog = temas[tema]; // 👈 Selección dinámica del contenido
+  const catalog = themes[tema]; 
 
   if (!catalog) {
-    return <p>⚠️ Tema no encontrado: "{tema}"</p>; // 👈 Protección contra rutas inválidas
+    return <p>Tema no encontrado: "{tema}"</p>; 
   }
 
   return (

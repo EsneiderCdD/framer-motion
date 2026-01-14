@@ -1,7 +1,7 @@
 // src/routes/AppRoutes.jsx
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
-import Catalog from '../pages/Catalog';
+import Catalog from '../pages/Catalog/Catalog';
 import Detail from '../pages/Detail';
 
 function AppRoutes() {
