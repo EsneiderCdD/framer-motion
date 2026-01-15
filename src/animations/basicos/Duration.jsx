@@ -1,4 +1,4 @@
-import AnimationDualBox from '../../components/AnimationDualBox/AnimationDualBox';
+import AnimationDualBox from '../../components/shared/AnimationDualBox/AnimationDualBox';
 import styles from './SlideDual.module.css';
 import DurationCatalog from '../../components/Duration/index';
 
