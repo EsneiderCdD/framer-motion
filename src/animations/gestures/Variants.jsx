@@ -2,7 +2,7 @@
 
 import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './styles.module.css';
-import VariantsCatalog from '../../components/Variants/index';
+import Lesson5 from '../../components/features/Basic/Lesson5/Lesson5';
 
 function Variants() {
   const codeString = `
@@ -76,7 +76,7 @@ const boxVariants = {
       </div>
 
       {/* Subtemas */}
-      <VariantsCatalog />
+      <Lesson5 />
     </AnimationBox>
   );
 }
