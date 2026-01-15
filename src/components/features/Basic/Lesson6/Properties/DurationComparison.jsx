@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './Duration.module.css';
-import m from '../../assets/images/m.png';
+import styles from '../styles/Properties.module.css';
+import m from '@/assets/images/m.png';
 
 export default function DurationComparison() {
   return (
