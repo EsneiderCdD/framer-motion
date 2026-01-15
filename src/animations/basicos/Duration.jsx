@@ -1,6 +1,6 @@
 import AnimationDualBox from '../../components/shared/AnimationDualBox/AnimationDualBox';
 import styles from './SlideDual.module.css';
-import DurationCatalog from '../../components/Duration/index';
+import Lesson6 from '../../components/features/Basic/Lesson6/Lesson6';
 
 function Duration() {
   const codeString = `<motion.div
@@ -97,7 +97,7 @@ function Duration() {
         Descargar documento
       </a>
 
-      <DurationCatalog />
+      <Lesson6 />
     </AnimationDualBox>
   );
 }
