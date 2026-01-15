@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import styles from '../styles/Properties.module.css';
 import m from '@/assets/images/m.png';

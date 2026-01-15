@@ -11,7 +11,6 @@ export default function Lesson6() {
     <div className={styles.container}>
 
       <h4 style={{ fontSize: '2.5rem' }}>Otras Propiedades</h4>
-      {/* <DurationComparison /> */}
       <EaseLinear />
       <EaseIn />
       <EaseOut />
