@@ -1,7 +1,7 @@
 // src/animations/basicos/SlideY.jsx
 import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
-import AnimationCatalog from '../../components/Examples';
+import Lesson2 from '../../components/features/Basic/Lesson2/Lesson2';
 
 function SlideY() {
   const codeString = `<motion.div
@@ -65,7 +65,7 @@ function SlideY() {
       </div>
 
       {/* Animation Catalog */}
-      <AnimationCatalog />
+      <Lesson2 />
 
     </AnimationBox>
   );
