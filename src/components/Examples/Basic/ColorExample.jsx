@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import styles from './Animations.module.css';
-import m from '../../assets/images/m.svg';
+import styles from '../styles/Examples.module.css';
+import m from '@/assets/images/m.svg';
 
 export default function ColorExample() {
   const [showCode, setShowCode] = useState(false);

@@ -6,7 +6,6 @@ import m from '@/assets/images/m.png';
 function AnimationDualBox({ animation1, animation2, children }) {
   return (
     <div className={styles.animationContainer}>
-      {/* Primer cuadro animado */}
       <div className={styles.container}>
         <motion.div
           initial={animation1.initial}
@@ -16,7 +15,6 @@ function AnimationDualBox({ animation1, animation2, children }) {
         >
           <img src={m} alt="Framer Motion Logo" className={styles.logo} />
         </motion.div>
-        {/* Segundo cuadro animado */}
         <motion.div
           initial={animation2.initial}
           animate={animation2.animate}
@@ -27,7 +25,6 @@ function AnimationDualBox({ animation1, animation2, children }) {
         </motion.div>
       </div>
 
-      {/* Descripción y código */}
       <div className={styles.description}>
         {children}
       </div>

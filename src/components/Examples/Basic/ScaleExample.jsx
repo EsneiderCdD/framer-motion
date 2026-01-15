@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import styles from './Animations.module.css';
+import styles from '../styles/Examples.module.css';
 import m from '../../assets/images/m.png';
 
 export default function ScaleExample() {
