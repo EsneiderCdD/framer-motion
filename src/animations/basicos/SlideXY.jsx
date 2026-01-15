@@ -1,7 +1,7 @@
 
 import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
-import SummationProp from '../../components/SummationProp';
+import Lesson3 from '../../components/features/Basic/Lesson3/Lesson3';
 function SlideXY() {
   const codeString = `<motion.div
   initial={{ y: -100, x: -100 }}
@@ -55,7 +55,7 @@ function SlideXY() {
       >
         Descargar documento
       </a>
-      <SummationProp />
+      <Lesson3 />
 
     </AnimationBox>
   );
