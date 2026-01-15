@@ -3,9 +3,9 @@
 
 import AnimationBox from '../../components/shared/AnimationBox/AnimationBox';
 import styles from './Slide.module.css';
-import KeyframesCatalog from '../../components/Keyframes';
+import Lesson4 from '../../components/features/Basic/Lesson4/Lesson4';
 function Circle() {
-   const codeString = `<motion.div
+  const codeString = `<motion.div
   initial={{ x: 0, y: 0 }}
   animate={{
         x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
@@ -19,13 +19,13 @@ function Circle() {
   return (
     <AnimationBox
       initial={{ x: 0, y: 0 }}
-        animate={{
+      animate={{
         x: [0, 70, 100, 70, 0, -70, -100, -70, 0],
         y: [-100, -70, 0, 70, 100, 70, 0, -70, -100]
       }}
-  transition={{ duration: 10 }}
+      transition={{ duration: 10 }}
     >
-     <h2>Vuelta</h2> 
+      <h2>Vuelta</h2>
       <h3>Initial, Animate y Transition </h3>
       <div className={styles.content}>
         <div className={styles.txt}>
@@ -63,7 +63,7 @@ function Circle() {
         Descargar documento
       </a>
 
-      <KeyframesCatalog />
+      <Lesson4 />
 
     </AnimationBox>
   );
