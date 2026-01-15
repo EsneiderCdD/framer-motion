@@ -1,7 +1,7 @@
 // DragConstraints.jsx
 import AnimationBox from "../../components/shared/AnimationBox/AnimationBox";
 import styles from "./styles.module.css";
-import GestureCatalog from "../../components/Drag/index";
+import Lesson1 from "../../components/features/Gestures/Lesson1/Lesson1";
 function DragConstraints() {
   const codeString = `<motion.div drag dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}>
   Arrástrame dentro del área
@@ -55,7 +55,7 @@ function DragConstraints() {
         ></iframe>
       </div>
 
-      <GestureCatalog />
+      <Lesson1 />
     </AnimationBox>
   );
 }

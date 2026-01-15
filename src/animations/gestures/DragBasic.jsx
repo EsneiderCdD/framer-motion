@@ -1,7 +1,7 @@
 // DragBasic.jsx
 import AnimationBox from "../../components/shared/AnimationBox/AnimationBox";
 import styles from "./styles.module.css";
-import GestureCatalog from "../../components/Drag/index";
+import Lesson1 from "../../components/features/Gestures/Lesson1/Lesson1";
 
 function DragBasic() {
   const codeString = `<motion.div drag>Arrástrame</motion.div>`;
@@ -53,9 +53,9 @@ function DragBasic() {
         ></iframe>
       </div>
 
-      <GestureCatalog />
+      <Lesson1 />
     </AnimationBox>
-    
+
 
 
   );
