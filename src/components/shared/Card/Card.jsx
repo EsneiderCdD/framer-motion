@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styles from './Card.module.css';
+import styles from './styles/Card.module.css';
 
 function Card({ title, animation }) {
   return (
@@ -12,7 +12,7 @@ function Card({ title, animation }) {
         initial="initial"
         animate="animate"
       >
-        
+
       </motion.div>
       <h2>{title}</h2>
     </div>

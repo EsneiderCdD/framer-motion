@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Card from '../../components/Card/Card';
+import Card from '../../components/shared/Card/Card';
 import styles from './styles/Home.module.css';
 import m from '../../assets/images/m.png';
 import { homeItems } from './data/home';
