@@ -1,14 +1,14 @@
 import SlideY from './SlideY';
 import SlideX from './SlideX';
 import SlideXY from './SlideXY';
-import Circle from './Circle';
-import CirclePerfect from './CirclePerfect';
+import Circle from '../../Showcase/Basic/Circular/Circle';
+import CirclePerfect from '../../Showcase/Basic/Circular/CirclePerfect';
 import Mov from './Duration';
 import RandomMotion from './RandomMotion';
 import LabMotionBuilder from './playground/LabMotionBuilder';
 
 
-import { generateCircleKeyframes } from '../../utils/generateCircleKeyFrames';
+import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
 const circleMotion = generateCircleKeyframes(40, 100);
 
@@ -134,24 +134,24 @@ export const catalogContent = [
     }
   },
   {
-  type: 'animation',
-  id: 'random-motion',
-  titulo: 'Movimiento Errante',
-  descripcion: 'Movimiento aleatorio continuo con velocidad y rango personalizados.',
-  componente: RandomMotion,
-  random: true,
-  speed: 0.5,    // Medio segundo entre cada salto
-  rangeX: 50,   // Movimiento máximo en X de +/- 150px
-  rangeY: 50 ,   // Movimiento máximo en Y de +/- 150px
+    type: 'animation',
+    id: 'random-motion',
+    titulo: 'Movimiento Errante',
+    descripcion: 'Movimiento aleatorio continuo con velocidad y rango personalizados.',
+    componente: RandomMotion,
+    random: true,
+    speed: 0.5,    // Medio segundo entre cada salto
+    rangeX: 50,   // Movimiento máximo en X de +/- 150px
+    rangeY: 50,   // Movimiento máximo en Y de +/- 150px
   },
-   {
-  type: 'animation',
-  id: 'Framer-Motion-Lab',
-  titulo: 'Framer Motion Lab',
-  descripcion: 'Intectua con un panel de animaciones',
-  componente: LabMotionBuilder,
+  {
+    type: 'animation',
+    id: 'Framer-Motion-Lab',
+    titulo: 'Framer Motion Lab',
+    descripcion: 'Intectua con un panel de animaciones',
+    componente: LabMotionBuilder,
     animation: {
-      animate: { x: 0},
+      animate: { x: 0 },
     }
   }
 ];
