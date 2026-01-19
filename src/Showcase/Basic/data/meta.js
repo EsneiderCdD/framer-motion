@@ -4,7 +4,7 @@ import SlideXY from '@/animations/basicos/SlideXY';
 import Circle from '../Circular/Circle';
 import CirclePerfect from '../Circular/CirclePerfect';
 import Mov from '../Utility/Duration';
-import RandomMotion from '@/animations/basicos/RandomMotion';
+import RandomMotion from '../Utility/RandomMotion';
 import LabMotionBuilder from '@/animations/basicos/playground/LabMotionBuilder';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
