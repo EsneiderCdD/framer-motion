@@ -3,7 +3,7 @@ import SlideX from './SlideX';
 import SlideXY from './SlideXY';
 import Circle from '../../Showcase/Basic/Circular/Circle';
 import CirclePerfect from '../../Showcase/Basic/Circular/CirclePerfect';
-import Mov from './Duration';
+import Mov from '../../Showcase/Basic/Utility/Duration';
 import RandomMotion from './RandomMotion';
 import LabMotionBuilder from './playground/LabMotionBuilder';
 
