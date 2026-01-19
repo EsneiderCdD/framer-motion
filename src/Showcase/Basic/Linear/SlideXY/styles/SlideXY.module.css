@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.codeBlock {
+    display: flex;
+    justify-content: center;
+    background-color: #F6EA11;
+    text-align: left;
+    padding: 2rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500
+}
+
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    width: 50%;
+    text-align: left;
+}
+
+p {
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
