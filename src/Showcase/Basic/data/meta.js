@@ -5,7 +5,7 @@ import Circle from '../Circular/Circle';
 import CirclePerfect from '../Circular/CirclePerfect';
 import Mov from '../Utility/Duration';
 import RandomMotion from '../Utility/RandomMotion';
-import LabMotionBuilder from '@/animations/basicos/playground/LabMotionBuilder';
+import LabMotionBuilder from '../Playground';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
