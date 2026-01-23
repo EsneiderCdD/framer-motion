@@ -1,0 +1,18 @@
+(1) Vamos a desarrollar manualmente el modal del diseño de IDE con nuestro codigo. Sin librerias.
+(2) Piensalo en tono oscuros, grises, el fondo "dark".
+(3) No necesito header, opcion de copiar que hagas otro estilo diferente a lo solicitado, cumple con la primera instruccion
+(4) el codigo que vamos a copiar te lo voy a decir, y piensalo como quedaria normalmente en un IDE bien dentado.
+(5) piensa en grilla, columnas. Para no tener que lidiar con margenes exactas un sistema especial de grillas finas pero simetricas ayudaria a solventar el problema de diseño de mas complejo porque es resto, una vez los textos nos quedeb bien "dentados" el resto es poner colores.
+(6) necesitamos un boton de "ver codigo" que desencadene el modal.
+
+el codigo es:
+
+<motion.div
+initial={{ x: -100 }}
+animate={{ x: 0 }}
+transition={{ duration: 1 }}
+>
+Slide X
+</motion.div>
+
+(aqui esta en texto plano, normalmente en un IDE bien dentado es como lo vamos ajustar para emular ese salto o ajuste)
