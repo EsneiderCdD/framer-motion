@@ -13,6 +13,7 @@ import RotateY from '../Properties/RotateY';
 import Opacity from '../Properties/Opacity';
 import Size from '../Properties/Size';
 import Color from '../Properties/Color';
+import ScaleRotate from '../Properties/ScaleRotate';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -217,6 +218,23 @@ export const catalogContent = [
                 duration: 2,
                 repeat: Infinity,
                 repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'scale-rotate-motion',
+        titulo: 'Escala y Rotación',
+        descripcion: 'Combinación de escala y rotación.',
+        componente: ScaleRotate,
+        animation: {
+            initial: { scale: 0.5, rotate: 0 },
+            animate: { scale: 1.5, rotate: 360 },
+            transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'easeInOut'
             }
         }
     },
