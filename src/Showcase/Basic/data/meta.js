@@ -6,13 +6,14 @@ import CirclePerfect from '../Circular/CirclePerfect';
 import Mov from '../Utility/Duration';
 import RandomMotion from '../Utility/RandomMotion';
 import LabMotionBuilder from '../Playground';
+import Scale from '../Properties/Scale';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
 const circleMotion = generateCircleKeyframes(40, 100);
 
 export const catalogContent = [
-    { type: 'title', text: 'Movimientos' },
+
 
     {
         type: 'animation',
@@ -99,6 +100,21 @@ export const catalogContent = [
                 duration: 10,
                 repeat: Infinity,
                 ease: 'linear'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'scale-motion',
+        titulo: 'Escala',
+        descripcion: 'Transformación de tamaño proporcional.',
+        componente: Scale,
+        animation: {
+            initial: { scale: 1.5 },
+            animate: { scale: 0 },
+            transition: {
+                duration: 2,
+                repeat: Infinity
             }
         }
     },
