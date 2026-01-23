@@ -10,6 +10,7 @@ import Scale from '../Properties/Scale';
 import Rotate from '../Properties/Rotate';
 import RotateX from '../Properties/RotateX';
 import RotateY from '../Properties/RotateY';
+import Opacity from '../Properties/Opacity';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -164,6 +165,22 @@ export const catalogContent = [
             animate: { rotateY: 360 },
             transition: {
                 duration: 5,
+                repeat: Infinity,
+                repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'opacity-motion',
+        titulo: 'Opacidad',
+        descripcion: 'Control de transparencia.',
+        componente: Opacity,
+        animation: {
+            initial: { opacity: 0.2 },
+            animate: { opacity: 1 },
+            transition: {
+                duration: 2,
                 repeat: Infinity,
                 repeatType: 'reverse'
             }
