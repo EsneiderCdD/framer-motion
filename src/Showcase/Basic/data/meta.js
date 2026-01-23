@@ -15,6 +15,7 @@ import Size from '../Properties/Size';
 import Color from '../Properties/Color';
 import ScaleRotate from '../Properties/ScaleRotate';
 import BorderColor from '../Properties/BorderColor';
+import ScaleRotateOpacity from '../Properties/ScaleRotateOpacity';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -253,6 +254,27 @@ export const catalogContent = [
                 repeat: Infinity,
                 repeatType: 'reverse'
             }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'scale-rotate-opacity-motion',
+        titulo: 'Escala, Rotación y Opacidad',
+        descripcion: 'Secuencia de transformaciones con delay.',
+        componente: ScaleRotateOpacity,
+        animation: {
+            initial: { scale: 0.5, rotate: 0, opacity: 0 },
+            animate: { scale: 1, rotate: 360, opacity: 1 },
+            transition: {
+                opacity: { duration: 3, delay: 0 },
+                scale: { duration: 3, delay: 3 },
+                rotate: { duration: 3, delay: 6 }
+            }
+            // Note: In the catalog preview, this animation will take 9 seconds to complete 
+            // and won't repeat automatically because repeat:Infinity isn't in these options. 
+            // But CardPreview handles re-rendering or simply just playing it once. 
+            // A long animation like this might look static for a while.
+            // However, sticking to the requested specs.
         }
     },
 
