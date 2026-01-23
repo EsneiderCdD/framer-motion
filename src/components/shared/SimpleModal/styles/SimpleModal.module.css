@@ -1,0 +1,85 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #555;
+    /* Gris oscuro requested */
+    color: black;
+    /* Letra negra requested */
+    
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Ajustado a la izquierda */
+    white-space: pre-wrap;
+    /* Respect line breaks */
+    font-family: monospace;
+    width: 365px;
+}
+
+/* Header Styles */
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: #444 !important;
+    /* Darker header bar */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #333;
+}
+
+.trafficLights {
+    display: flex;
+    gap: 0.5rem;
+    background-color: transparent !important;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff5f56 !important;
+}
+
+.yellow {
+    background-color: #ffbd2e !important;
+}
+
+.green {
+    background-color: #27c93f !important;
+}
+
+.closeButton {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: #fff;
+}

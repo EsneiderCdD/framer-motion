@@ -1,0 +1,62 @@
+export const slideXCode = [
+    {
+        indent: 0,
+        tokens: [
+            { type: 'punctuation', content: '<' },
+            { type: 'component', content: 'motion.div' }
+        ]
+    },
+    {
+        indent: 1,
+        tokens: [
+            { type: 'prop', content: 'initial' },
+            { type: 'operator', content: '={{' },
+            { type: 'prop', content: ' x' },
+            { type: 'operator', content: ': ' },
+            { type: 'number', content: '-100' },
+            { type: 'operator', content: ' }}' }
+        ]
+    },
+    {
+        indent: 1,
+        tokens: [
+            { type: 'prop', content: 'animate' },
+            { type: 'operator', content: '={{' },
+            { type: 'prop', content: ' x' },
+            { type: 'operator', content: ': ' },
+            { type: 'number', content: '0' },
+            { type: 'operator', content: ' }}' }
+        ]
+    },
+    {
+        indent: 1,
+        tokens: [
+            { type: 'prop', content: 'transition' },
+            { type: 'operator', content: '={{' },
+            { type: 'prop', content: ' duration' },
+            { type: 'operator', content: ': ' },
+            { type: 'number', content: '1' },
+            { type: 'operator', content: ' }}' }
+        ]
+    },
+    {
+        indent: 0,
+        tokens: [
+            { type: 'punctuation', content: '>' }
+        ]
+    },
+    {
+        indent: 1,
+        tokens: [
+            { type: 'text', content: 'Slide X' }
+        ]
+    },
+    {
+        indent: 0,
+        tokens: [
+            { type: 'punctuation', content: '</' },
+            { type: 'component', content: 'motion.div' },
+            { type: 'punctuation', content: '>' }
+        ]
+    }
+];

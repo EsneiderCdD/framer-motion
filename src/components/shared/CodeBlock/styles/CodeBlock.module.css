@@ -1,0 +1,90 @@
+.container {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1e1e1e !important;
+    color: #d4d4d4;
+    padding: 0.5rem 1.5rem 1.5rem 0.5rem;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+.container span {
+    background-color: transparent !important;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1.6;
+    white-space: pre;
+    min-height: 1.5rem;
+    background-color: transparent !important;
+}
+
+.lineNumber {
+    display: inline-block;
+    width: 1rem;
+    margin-right: 0.1rem;
+    color: #858585;
+    /* VSCode generic comment/line number color */
+    text-align: left;
+    user-select: none;
+    font-size: 0.8em;
+    opacity: 0.7;
+    background-color: transparent !important;
+}
+
+/* Tokens */
+.token {
+    background-color: transparent !important;
+    /* Critical override for user's wild * selector */
+}
+
+/* Syntax Highlighting Colors (VSCode Dark inspired) */
+.tag {
+    color: #569cd6;
+}
+
+/* Blue */
+.component {
+    color: #4ec9b0;
+}
+
+/* Teal-ish for React components */
+.prop {
+    color: #9cdcfe;
+}
+
+/* Light Blue */
+.string {
+    color: #ce9178;
+}
+
+/* Orange/Brown */
+.keyword {
+    color: #c586c0;
+}
+
+/* Purple */
+.number {
+    color: #b5cea8;
+}
+
+/* Light Green */
+.punctuation {
+    color: #ffd700;
+}
+
+/* Gold/Yellow */
+.operator {
+    color: #d4d4d4;
+}
+
+/* White/Gray */
+.text {
+    color: #d4d4d4;
+}
+
+/* Default text */
