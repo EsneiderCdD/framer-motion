@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 90vh;
   
 }
 
@@ -10,13 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  margin-bottom: 3rem;
   
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 

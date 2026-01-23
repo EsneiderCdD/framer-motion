@@ -3,7 +3,7 @@ import styles from './styles/SlideX.module.css';
 import { slideXContent } from './data/content';
 
 function SlideX() {
-    const { title, subtitle, code, description } = slideXContent;
+    const { title, code, description } = slideXContent;
 
     return (
         <AnimationBox
@@ -15,24 +15,14 @@ function SlideX() {
             }}
         >
             <h2>{title}</h2>
-            <h3>{subtitle}</h3>
             <div className={styles.content}>
                 <div className={styles.txt}>
                     {description}
                 </div>
-                <pre className={styles.codeBlock}>
+                {/* <pre className={styles.codeBlock}>
                     <code>{code}</code>
-                </pre>
+                </pre> */}
             </div>
-
-            {/* Enlace para descargar el documento */}
-            <a
-                href="/documents/01.docx"
-                download
-                style={{ display: 'inline-block', marginTop: '1rem', color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
-            >
-                Descargar documento
-            </a>
         </AnimationBox>
     );
 }

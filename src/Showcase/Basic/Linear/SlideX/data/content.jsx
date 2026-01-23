@@ -1,6 +1,6 @@
 export const slideXContent = {
     title: "Movimiento en el eje X",
-    subtitle: "Initial, Animate y Transition",
+   
     code: `<motion.div
 initial={{ x: -100 }}
 animate={{ x: 0 }}
