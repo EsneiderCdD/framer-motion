@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles/AnimationCard.module.css';
 import m from '@/assets/images/m.png';
-import RandomMotion from '@/animations/basicos/RandomMotion';
+import RandomMotion from '@/Showcase/Basic/Utility/RandomMotion';
 
 function CardPreview({ random, animation, animation1, animation2 }) {
     if (random) {

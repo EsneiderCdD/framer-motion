@@ -1,7 +1,7 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useEffect } from 'react';
 import styles from './styles.module.css';
-import m from '../../../../../assets/images/m.png';
+import m from '@/assets/images/m.png';
 
 function MotionPreview({ motionProps, transitionProps, playbackState }) {
   const controls = useAnimationControls();
