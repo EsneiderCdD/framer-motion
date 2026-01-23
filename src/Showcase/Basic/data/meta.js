@@ -14,6 +14,7 @@ import Opacity from '../Properties/Opacity';
 import Size from '../Properties/Size';
 import Color from '../Properties/Color';
 import ScaleRotate from '../Properties/ScaleRotate';
+import BorderColor from '../Properties/BorderColor';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -235,6 +236,22 @@ export const catalogContent = [
                 repeat: Infinity,
                 repeatType: 'reverse',
                 ease: 'easeInOut'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'border-shadow-motion',
+        titulo: 'Borde y Color',
+        descripcion: 'Transformación de color y radio de borde.',
+        componente: BorderColor,
+        animation: {
+            initial: { backgroundColor: '#F6EA11', borderRadius: '0%' },
+            animate: { backgroundColor: '#000000', borderRadius: '50%' },
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse'
             }
         }
     },
