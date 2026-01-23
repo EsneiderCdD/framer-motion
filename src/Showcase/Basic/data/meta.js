@@ -11,6 +11,7 @@ import Rotate from '../Properties/Rotate';
 import RotateX from '../Properties/RotateX';
 import RotateY from '../Properties/RotateY';
 import Opacity from '../Properties/Opacity';
+import Size from '../Properties/Size';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -181,6 +182,22 @@ export const catalogContent = [
             animate: { opacity: 1 },
             transition: {
                 duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'size-motion',
+        titulo: 'Tamaño',
+        descripcion: 'Cambio de dimensiones (width/height).',
+        componente: Size,
+        animation: {
+            initial: { width: '100px', height: '100px' },
+            animate: { width: '150px', height: '150px' },
+            transition: {
+                duration: 10,
                 repeat: Infinity,
                 repeatType: 'reverse'
             }
