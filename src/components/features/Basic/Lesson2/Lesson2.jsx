@@ -1,6 +1,6 @@
 
 
-import RotateExample from './Properties/RotateExample';
+
 import OpacityExample from './Properties/OpacityExample';
 import SizeExample from './Properties/SizeExample';
 import ColorExample from './Properties/ColorExample';
@@ -12,7 +12,6 @@ export default function Lesson2() {
 
       <div>
         <h4 style={{ fontSize: '2.5rem' }}>Otras Propiedades</h4>
-        <RotateExample />
         <OpacityExample />
         <SizeExample />
         <ColorExample />

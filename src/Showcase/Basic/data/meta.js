@@ -7,6 +7,9 @@ import Mov from '../Utility/Duration';
 import RandomMotion from '../Utility/RandomMotion';
 import LabMotionBuilder from '../Playground';
 import Scale from '../Properties/Scale';
+import Rotate from '../Properties/Rotate';
+import RotateX from '../Properties/RotateX';
+import RotateY from '../Properties/RotateY';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -115,6 +118,54 @@ export const catalogContent = [
             transition: {
                 duration: 2,
                 repeat: Infinity
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'rotate-motion',
+        titulo: 'Rotación',
+        descripcion: 'Rotación en su propio eje.',
+        componente: Rotate,
+        animation: {
+            initial: { rotate: 0 },
+            animate: { rotate: 360 },
+            transition: {
+                duration: 5,
+                repeat: Infinity,
+                repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'rotate-x-motion',
+        titulo: 'Rotación X',
+        descripcion: 'Rotación sobre el eje X.',
+        componente: RotateX,
+        animation: {
+            initial: { rotateX: 0 },
+            animate: { rotateX: 360 },
+            transition: {
+                duration: 5,
+                repeat: Infinity,
+                repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'rotate-y-motion',
+        titulo: 'Rotación Y',
+        descripcion: 'Rotación sobre el eje Y.',
+        componente: RotateY,
+        animation: {
+            initial: { rotateY: 0 },
+            animate: { rotateY: 360 },
+            transition: {
+                duration: 5,
+                repeat: Infinity,
+                repeatType: 'reverse'
             }
         }
     },
