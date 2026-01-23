@@ -12,6 +12,7 @@ import RotateX from '../Properties/RotateX';
 import RotateY from '../Properties/RotateY';
 import Opacity from '../Properties/Opacity';
 import Size from '../Properties/Size';
+import Color from '../Properties/Color';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -198,6 +199,22 @@ export const catalogContent = [
             animate: { width: '150px', height: '150px' },
             transition: {
                 duration: 10,
+                repeat: Infinity,
+                repeatType: 'reverse'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'color-motion',
+        titulo: 'Color',
+        descripcion: 'Cambio de color de fondo.',
+        componente: Color,
+        animation: {
+            initial: { backgroundColor: '#F6EA11' },
+            animate: { backgroundColor: '#000000' },
+            transition: {
+                duration: 2,
                 repeat: Infinity,
                 repeatType: 'reverse'
             }
