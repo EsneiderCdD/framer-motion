@@ -16,6 +16,7 @@ import Color from '../Properties/Color';
 import ScaleRotate from '../Properties/ScaleRotate';
 import BorderColor from '../Properties/BorderColor';
 import ScaleRotateOpacity from '../Properties/ScaleRotateOpacity';
+import ScaleKeyframes from '../Properties/ScaleKeyframes';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -275,6 +276,21 @@ export const catalogContent = [
             // But CardPreview handles re-rendering or simply just playing it once. 
             // A long animation like this might look static for a while.
             // However, sticking to the requested specs.
+        }
+    },
+
+    {
+        type: 'animation',
+        id: 'scale-keyframes-motion',
+        titulo: 'Escala (Keyframes)',
+        descripcion: 'Ciclos de expansión y contracción mediante keyframes.',
+        componente: ScaleKeyframes,
+        animation: {
+            animate: { scale: [1, 1.5, 0.5, 1] },
+            transition: {
+                duration: 3,
+                repeat: Infinity
+            }
         }
     },
 
