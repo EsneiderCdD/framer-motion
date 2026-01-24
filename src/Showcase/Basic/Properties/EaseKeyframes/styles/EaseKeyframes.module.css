@@ -1,6 +1,7 @@
 .content {
     display: flex;
     justify-content: center;
+
 }
 
 .codeBlock {
@@ -25,11 +26,12 @@ h3 {
     font-weight: 500
 }
 
+
 .txt {
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
-    width: 50%;
+    width: 100%;
     text-align: left;
 }
 
@@ -37,6 +39,49 @@ p {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0.5rem 0;
+}
+
+/* Navigation & Controls */
+.controlsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem auto;
+}
+
+.codeButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    color: #333;
+}
+
+.navButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    color: #333;
+}
+
+.navButton:hover {
+    transform: scale(1.2);
+    /* Slight scale on hover as requested "sobresalgan" */
+}
+
+.codeButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .circle {
