@@ -17,6 +17,11 @@ import ScaleRotate from '../Properties/ScaleRotate';
 import BorderColor from '../Properties/BorderColor';
 import ScaleRotateOpacity from '../Properties/ScaleRotateOpacity';
 import ScaleKeyframes from '../Properties/ScaleKeyframes';
+import RotateKeyframes from '../Properties/RotateKeyframes';
+import OpacityKeyframes from '../Properties/OpacityKeyframes';
+import CombinedKeyframes from '../Properties/CombinedKeyframes';
+import TimesKeyframes from '../Properties/TimesKeyframes';
+import EaseKeyframes from '../Properties/EaseKeyframes';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -289,6 +294,79 @@ export const catalogContent = [
             animate: { scale: [1, 1.5, 0.5, 1] },
             transition: {
                 duration: 3,
+                repeat: Infinity
+            }
+        }
+    },
+
+
+    {
+        type: 'animation',
+        id: 'rotate-keyframes-motion',
+        titulo: 'Rotación (Keyframes)',
+        descripcion: 'Rotación por etapas en espejo.',
+        componente: RotateKeyframes,
+        animation: {
+            animate: { rotate: [0, 90, 180, 270, 360] },
+            transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: 'mirror'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'opacity-keyframes-motion',
+        titulo: 'Opacidad (Keyframes)',
+        descripcion: 'Parpadeo suave con keyframes.',
+        componente: OpacityKeyframes,
+        animation: {
+            animate: { opacity: [1, 0.5, 0, 0.5, 1] },
+            transition: { duration: 2, repeat: Infinity }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'combined-keyframes-motion',
+        titulo: 'Combinado (Keyframes)',
+        descripcion: 'Múltiples propiedades simultáneas.',
+        componente: CombinedKeyframes,
+        animation: {
+            animate: {
+                x: [0, 50, 0, -50, 0],
+                scale: [1, 1.2, 1, 0.8, 1],
+                opacity: [1, 0.5, 0.2, 0.5, 1]
+            },
+            transition: { duration: 4, repeat: Infinity }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'times-keyframes-motion',
+        titulo: 'Tiempos (Keyframes)',
+        descripcion: 'Control de ritmo con times.',
+        componente: TimesKeyframes,
+        animation: {
+            animate: { x: [0, 100, 0] },
+            transition: {
+                duration: 3,
+                times: [0, 0.3, 1],
+                repeat: Infinity
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'ease-keyframes-motion',
+        titulo: 'Curvas (Ease Keyframes)',
+        descripcion: 'Aceleración variable entre pasos.',
+        componente: EaseKeyframes,
+        animation: {
+            animate: { x: [0, 100, -100, 0] },
+            transition: {
+                duration: 4,
+                ease: ['easeIn', 'easeOut', 'easeInOut'],
                 repeat: Infinity
             }
         }
