@@ -1,6 +1,6 @@
 import AnimationBox from '../../../../components/shared/AnimationBox/AnimationBox';
 import styles from './styles/Circle.module.css';
-import Lesson4 from '../../../../components/features/Basic/Lesson4/Lesson4';
+
 import { circleContent } from './data/content';
 
 function Circle() {
@@ -26,7 +26,7 @@ function Circle() {
                 </pre>
             </div>
 
-            <Lesson4 />
+
 
         </AnimationBox>
     );
