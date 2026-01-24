@@ -22,6 +22,10 @@ import OpacityKeyframes from '../Properties/OpacityKeyframes';
 import CombinedKeyframes from '../Properties/CombinedKeyframes';
 import TimesKeyframes from '../Properties/TimesKeyframes';
 import EaseKeyframes from '../Properties/EaseKeyframes';
+import EaseLinear from '../Utility/EaseLinear';
+import EaseIn from '../Utility/EaseIn';
+import EaseOut from '../Utility/EaseOut';
+import EaseInOut from '../Utility/EaseInOut';
 
 import { generateCircleKeyframes } from '@/utils/generateCircleKeyframes';
 
@@ -368,6 +372,76 @@ export const catalogContent = [
                 duration: 4,
                 ease: ['easeIn', 'easeOut', 'easeInOut'],
                 repeat: Infinity
+            }
+        }
+    },
+
+
+    {
+        type: 'animation',
+        id: 'ease-linear-motion',
+        titulo: 'Ease Linear',
+        descripcion: 'Velocidad constante (sin aceleración).',
+        componente: EaseLinear,
+        animation: {
+            initial: { x: -100 },
+            animate: { x: 100 },
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'linear'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'ease-in-motion',
+        titulo: 'Ease In',
+        descripcion: 'Aceleración al inicio.',
+        componente: EaseIn,
+        animation: {
+            initial: { x: -100 },
+            animate: { x: 100 },
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'easeIn'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'ease-out-motion',
+        titulo: 'Ease Out',
+        descripcion: 'Desaceleración al final.',
+        componente: EaseOut,
+        animation: {
+            initial: { x: -100 },
+            animate: { x: 100 },
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'easeOut'
+            }
+        }
+    },
+    {
+        type: 'animation',
+        id: 'ease-in-out-motion',
+        titulo: 'Ease InOut',
+        descripcion: 'Aceleración y desaceleración.',
+        componente: EaseInOut,
+        animation: {
+            initial: { x: -100 },
+            animate: { x: 100 },
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'easeInOut'
             }
         }
     },
